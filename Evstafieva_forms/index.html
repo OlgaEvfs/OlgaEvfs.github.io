@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Формы</title>
+<link rel="stylesheet" type="text/css" href="form_style.css">
+</head>
+<body>
+<div class="Wrapper">
+	<a id="top"></a>
+	<a href="#bottom">&dArr;Вниз</a>
+	<header>
+		<h1>Создание форм в HTML5</h1>
+	</header>
+	<aside>
+		<nav>
+			<ul type="square">
+				<li><a href="ankett.html">Ресторан "Магия"</a></li>
+				<li><a href="registr.html">Регистрация</a></li>
+				<li><a href="sport.html">Лыжные соревнования</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<h2>Общее описание</h2>
+		<p><b>HTML</b> формы являются элементами управления,
+		которые применяются для сбора информации от
+		посетителей веб-сайта.<br>
+		Веб-формы состоят из набора текстовых полей,
+		кнопок, списков и других элементов управления,
+		которые активизируются щелчком мыши.<br>
+		Технически формы передают данные от
+		пользователя удаленному серверу. Для получения и
+		обработки данных форм используются языки веб-программирования, такие как PHP, Perl.</p>
+		<h2>Создание формы</h2>
+		<p>Форма начинается с парного тега <span class="bluetext">&lt;form&gt; &lt;/form&gt;</span>. Тег <span class="bluetext">&lt;form&gt;</span> удерживает
+		все элементы управления формы, которые также называются <span class="redtext">полями</span>.
+		Атрибуты этого элемента содержат информацию, общую для всех полей
+		формы, поэтому в одну форму нужно включать поля, объединенные
+		логически.</p>
+		<div class="kood"><b>&lt;form name="form_1" action="script/reguest.php" method="post">&lt;/form&gt;</b></div>
+		<ul type="disc">
+			<li>Атрибут <span class="redtext">name</span>. Значение этого атрибута означает имя HTML формы.</li>
+			<li>Атрибут <span class="redtext">action</span>. Значение этого атрибута отвечает за путь к файлу скрипта, 
+			который будет обрабатывать форму. То есть мало ввести данные в форму, их 
+			же ведь ещё нужно соответствующим образом обработать, и вот как раз путь 
+			к этому файлу-обработчику и находится в значении атрибута <span class="redtext">action</span>.</li>
+			<li>Атрибут <span class="redtext">method</span>. У него может быть одно из двух значений: <span class="greentext">post</span> или <span class="greentext">get</span>. Этот 
+			атрибут определяет способ отправки. Первый способ является скрытой 
+			отправкой данных, а второй открытой.</li>
+		</ul>
+		<h2>Добавление текстового поля</h2>
+		<p>Добавляется текстовое поле с помощью тега <span class="bluetext">&lt;input&gt;</span>, а точнее с
+		помощью атрибута этого тега <span class="redtext">type</span> со значением <span class="greentext">text</span>.</p>
+		<div class="kood"><b>&lt;input type="text" name="firstname" value="Введите фамилию"&gt;</b></div>
+		<ul type="disc">
+			<li>Атрибут <span class="redtext">type</span> отвечает за тип элемента ввода. В данном случае, 
+			мы указали, что это обычное текстовое поле. В следующих 
+			элементах мы будем менять значение этого атрибута.</li>
+			<li>Атрибут <span class="redtext">name</span> отвечает за имя элемента. Здесь мы указали, что 
+			имя данного поля <i><b>firstname</b></i>.</li>
+			<li> Атрибут <span class="redtext">value</span> отвечает за значение этого поля по умолчанию.</li>
+		</ul>
+		<form name="form_1" action="script/reguest.php" method="post">
+		<input type="text" name="firstname" value="Введите фамилию">
+		<h2>Добавление текстового поля для ввода пароля</h2>
+		<p>Однострочное текстовое поле для ввода не обычных
+		символов, а ввода пароля, то есть текст должен быть скрыт
+		звездочками.</p>
+		<div class="kood"><b>&lt;input type="password" name="pass" value="Введите пароль"&gt;</b></div>
+		<input type="password" name="pass" value="Введите пароль">
+		<p>Теперь значением атрибута <span class="redtext">type</span> является ,<i><b>password</b></i>.
+		Остальные атрибуты те же, что и для обычного текстового
+		поля.</p>
+		<h2>Добавление выпадающего списка</h2>
+		<p>Состоит из объявления создания выпадающего списка и
+		добавления элементов списка.</p>
+		<div class="kood"><b>&lt;select name="choice"&gt;<br>
+			&lt;option value="1">Вариант 1 &lt;/option&gt;<br>
+			&lt;option value="2">Вариант 2 &lt;/option&gt;<br>
+			&lt;option value="3">Вариант 3 &lt;/option&gt;<br>
+		&lt;/select&gt;</b></div>
+		<select name="choice">
+			<option value="1">Вариант 1</option>
+			<option value="2">Вариант 2</option>
+			<option value="3">Вариант 3</option>
+		</select>
+		<p>Тег <span class="bluetext">&lt;select&gt;</span> означает начало выпадающего списка. Заканчивается список
+		тегом <span class="bluetext">&lt;/select&gt;</span>. Элементы списка создаются с помощью тега <span class="bluetext">&lt;option&gt;</span>.
+		Значение атрибута <span class="redtext">value</span> означает, какое значение будет у переменной
+		<span class="greentext">choice</span>, то есть либо <span class="greentext">choice = 1</span>, либо <span class="greentext">choice = 2</span>, либо <span class="greentext">choice = 3</span>. Сразу
+		после окончания описания тега <span class="bluetext">&lt;option&gt;</span> ставится то, что увидит пользователь в выпадающем списке.</p>
+		<h2>Добавление текстовой области</h2>
+		<p>Для добавления текстовой области используется тег <span class="bluetext">&lt;textarea&gt;</span>.</p>
+		<div class="kood"><b>&lt;textarea name="message" rows="15" cols="40">Сообщение &lt;/textarea&gt;</b></div>
+		<textarea name="message" rows="15" cols="40">Сообщение</textarea>
+		<p>Создана текстовая область высотой в 15 строк (значение атрибута <span class="redtext">rows</span>) и шириной в 40 символов (значение атрибута <span class="redtext">cols</span>). Внутри этого парного тега указывается текст в текстовой области по умолчанию.</p>
+		<h2>Добавление радиокнопки</h2>
+		<p>Радиокнопка (<span class="redtext">radio-button</span>) - элемент интерфейса, который позволяет пользователю выбрать один пункт из предопределенного набора (группы). Для создания радиокнопки используется тег <span class="bluetext">input</span>.</p>
+		<div class="kood"><b>Выберите вариант:<br>
+			&lt;input type="radio" name="choiceradio" value="1">Вариант 1&gt;<br></b></div>
+		<input type="radio" name="choiceradio" value="1">Вариант 1
+		<ul type="disc">
+			<li>Атрибут <span class="redtext">name</span> отвечает не только за задание имени, но и одна группа радиокнопок должна иметь одно и то же значение атрибута name. Если НЕ сделать одинаковыми имена у этих трёх радиокнопок, то они станут независимыми, а, следовательно, можно будет выбрать сразу несколько вариантов.</li>
+			<li>Атрибут <span class="redtext">value</span> означает значение переменной choiceradio. Сразу после описания тега input идёт текст, который увидит пользователь рядом с соответствующей радиокнопкой.</li>
+			<li>Атрибут <span class="redtext">value</span> отвечает за значение этого поля по умолчанию.</li>
+		</ul>
+		<h2>Добавление переключателей</h2>
+		<p><b>Переключатели (checkbox)</b> создаются с помощью тега input.</p>
+		<div class="kood"><b>Вы согласны с нашими правилами:<br>
+		&lt;input type="checkbox" name="terms" value="yes"&gt;</b></div>
+		<input type="checkbox" name="terms" value="yes">
+		<p>Если флажок будет стоять, то значение переменной <span class="greentext">terms</span> будет <span class="greentext">yes</span>, если не будет стоять, то значение этой переменной будет "", то есть пустой строкой.</p>
+		<h2>Добавление поля для выбора файла</h2>
+		<p>При загрузке файла на сервер, часто приходится использовать поле вставки имени файла, которое создается с помощью тега <span class="bluetext">&lt;input&gt;</span>.</p>
+		<div class="kood"><b>Выберите файл для загрузки:<br>
+		&lt;input type="file" name="path"&gt;</b></div>
+		<input type="file" name="path">
+		<h2>Кнопки</h2>
+		<ol>
+			<li><b>Обычная кнопка</b>
+				<p>Создается кнопка, которая сама по себе не совершает никаких действий и не отправляет форму на сервер. Это многофункциональная кнопка, управляемая JavaScript (обычно через событие click).</p>
+				<div class="kood"><b>&lt;input type="button" name="start" value="Начать"&gt;</b></div>
+				<input type="button" name="start" value="Начать">
+				<p>Значение атрибута <span class="redtext">type</span> - <b>button</b>, сообщает браузеру, что это кнопка.<br>Атрибут <span class="redtext">name</span> - это имя кнопки.<br>Значение атрибута <span class="redtext">value</span> отвечает за текст на кнопке.</p>
+			</li>
+			<h2>Кнопки</h2>
+			<li><b>Кнопка submit</b>
+				<p>Кнопка <b>submit</b>, при нажтии на которую форма отправляется на обработку к файлу, указанному в атрибуте <span class="redtext">action</span> тега <span class="bluetext">&lt;form&gt;</span>.</p>
+				<div class="kood"><b>&lt;input type = "submit" value = "Отправить"&gt;</b></div>
+				<input type="submit" value="Отправить">
+			</li>
+			<h2>Кнопки</h2>
+			<li><b>Кнопка Reset</b>
+				<p>Создается кнопка для очистки формы.</p>
+				<div class="kood"><b>&lt;input type="reset" value="Очистить"&gt;</b></div>
+				<input type="reset" value="Очистить">
+			</li>
+			<h2>Кнопки</h2>
+			<li><b>Кнопка Submit в виде изображения</b>
+				<p>Загружает изображение, которое используется вместо кнопки Submit. Для работы тег <span class="bluetext">&lt;input&gt;</span> должен содержать также атрибут <span class="redtext">src</span>, указывающий путь к изображению.</p>
+				<div class="kood"><b>&lt;input type="image" src="button_otpravit.jpg"&gt;</b></div>
+				<input type="image" src="submit.png">
+			</li>	
+		</ol>
+		<h2>Группа</h2>
+		<p>Группа объединяет несколько полей форм и элементов управления, имеющих сходное назначение. Визуально группа представляет собой рамку, окружающую содержимое формы, и имеющую заголовок, расположенный на верхней или нижней границы.</p>
+		<p><b>Группа создается с помощью парного тега</b><span class="bluetext">&lt;fieldset&gt;:</span></p>
+		<p><span class="bluetext">&lt;fieldset&gt;</span> Содержимое группы <span class="bluetext">&lt;/fieldset&gt;</span></p>
+		<p>Заголовок группы задается при помощи парного тега <span class="bluetext">&lt;legend&gt;</span>, который должен помещаться либо после открывающего тега <span class="bluetext">&lt;fieldset&gt;</span>, либо перед закрывающим тегом <span class="bluetext">&lt;/fieldset&gt;</span>. В первом случае заголовок будет отображаться на верхней границе группы, во втром-на нижней.</p>
+		<fieldset>
+			<legend>Контактные данные</legend>
+			<input type="text" name="firstname" value="Введите фамилию и имя">
+		</fieldset>
+	</form>
+	</main>
+<a href="#top">&uArr;Вверх</a>
+<a id="bottom"></a>
+</div>
+</body>
+</html>

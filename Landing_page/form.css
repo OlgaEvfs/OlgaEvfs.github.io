@@ -1,0 +1,262 @@
+body {
+    background: url('Images/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    /*align-items: center;
+    justify-content: center;*/
+}
+.wrapper {
+	justify-content: flex-start;
+    /*max-width: ;*/
+    width: 100%/*1280px*/;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    /*justify-content: flex-start;*/
+    display: flex;
+    flex-direction: column; /* Ставим элементы друг под другом */
+    align-items: center; /* Центрируем */
+    padding: 0.78125%/*10px*/;
+    width: 100%;
+    /*max-width: 1280px;*/
+    margin-bottom: 3.515625%/*45px*/;
+}
+.nav {
+    color: red;
+    -webkit-text-stroke: 5px white;
+    font-size: 3rem;
+    text-decoration: none;
+    margin: 7.8125%/*100px*/ 0;
+    transition: visibility 0s, opacity 0.3s ease; 
+    opacity: 0;
+}
+.logo {
+    height: 151px;
+}
+.navigation {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*max-width: 1280px;*/
+    gap: 18.125%/*232px*/;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6.171875%/*79px*/;
+}
+nav a {
+    text-decoration: none;
+    color: #DDA54C;
+    font-size: 1.5rem/*24px*/;
+    font-family: "Balsamiq Sans", sans-serif;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #BC0000;
+}
+main {
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 4rem/*64px*/;
+    font-family: "Bona Nova", serif;
+    color: #DDA54C;
+    margin-bottom: /*85px*/;
+    text-align: center;
+}
+form {
+    box-sizing: border-box;
+    /*flex-direction: column;
+    justify-content: center;*/
+}
+fieldset {
+    padding: 40px;
+    max-width: 1040px;
+    width: 100%;
+    border: 10px solid #5A5757;
+    margin-bottom: 100px;
+    /*height: 270px;*/
+    background: linear-gradient(90deg, black 55%, transparent 70%);
+}
+legend {
+    border: 10px solid #5A5757;
+    font-size: 2.25em/*36px*/;
+    font-family: "Bona Nova", serif;
+    color: #DD4C4C;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-align: center;
+    background: black;
+}
+label {
+    display: inline-flex;
+    margin-left: 128px;
+    margin-right: 50px;
+    font-size: 1.5em/*24px*/;
+    font-family: "Bona Nova", serif;
+    color: #DDA54C;
+    margin-bottom: 28px;
+}
+input {
+    max-width: 240px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 28px;
+    border-radius: 10px;
+}
+input[name='name'] {
+    margin-left: 57px;
+}
+input[name='last_name'] {
+    margin-left: 5px;
+}
+input[type='tel'] {
+    margin-left: 15px;
+}
+input[type='email'] {
+    margin-left: 20px;
+}
+select[name=choice] {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    border: 5px solid white;
+    font-family: "Bona Nova", serif;
+    color: #DDA54C;
+    background: black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5em/*24px*/;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 128px;
+}
+.redtext {
+    color: #DD4C4C;
+}
+input[name=quantity] {
+    width: 100%;
+    max-width: 100px;
+    background: black;
+    border: 5px solid white;
+    font-family: "Bona Nova", serif;
+    color: #DDA54C;
+    padding: 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5em/*24px*/;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+input[name=comment] {
+    width: 100%;
+    max-width: 300px;
+    background: black;
+    border: 5px solid white;
+    font-family: "Bona Nova", serif;
+    color: #DDA54C;
+    padding: 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5em/*24px*/;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 21px;
+}
+button[type=button] {
+    width: 100%;
+    max-width: 55px;
+    background: black;
+    border: 5px solid white;
+    font-family: "Bona Nova", serif;
+    color: #DDA54C;
+    padding: 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5em/*24px*/;
+    text-align: center;
+}
+input[name=street] {
+    margin-left: 45px;
+}
+input[name=house] {
+    margin-left: 65px;
+}
+input[name=sity] {
+    margin-left: 45px;
+}
+input[name=index] {
+    margin-left: 27px;
+}
+h3 {
+    font-family: "Bona Nova", serif;
+    color: #DD4C4C;
+    font-size: 2.25em/*36px*/;
+    margin-left: 125px;
+}
+input[name=choiceradio] {
+    width: 15px;
+    font-family: "Bona Nova", serif;
+    margin-left: 120px;
+    margin-right: 30px;
+}
+.yellow {
+    color: #DDA54C;
+    font-family: "Bona Nova", serif;
+    font-size: 1.5em/*24px*/;
+    margin-right: 30px;
+}
+input[name=money] {
+    width: 15px;
+    font-family: "Bona Nova", serif;
+    margin-left: 120px;
+    margin-right: 30px;
+}
+input[name=choice2] {
+    width: 15px;
+    margin-right: 30px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+}
+input[type=submit],input[type=reset] {
+    width: 100%;
+    max-width: 240px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: #DD4C4C;
+    color: #FFB236;
+    letter-spacing: 0.72px;
+    line-height: 21px;
+    font-size: 1.5em/*24px*/;
+    padding: 15px 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: "Bona Nova", serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 4px 3px 4px rgba(0, 0, 0, 0.25),
+                inset -4px -3px 4px rgba(0, 0, 0, 0.25);
+}
+input[type=radio] {
+    height: auto;
+}

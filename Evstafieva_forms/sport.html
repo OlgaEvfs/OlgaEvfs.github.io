@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Лыжные соревнования</title>
+	<link rel="stylesheet" type="text/css" href="sport.css">
+</head>
+<body>
+<div class="Wrapper">
+	<div class="button">
+	<a id="top"></a>
+	<a href="#bottom">&dArr;Вниз</a>
+	</div>
+	<header>
+		<h1>Регистрация на лыжные соревнования</h1>
+	</header>
+	<aside>
+		<nav>
+			<ul type="disc">
+				<li><a href="index.html">Главная страница</a></li>
+				<li><a href="registr.html">Регистрация</a></li>
+				<li><a href="ankett.html">Ресторан "Магия"</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<form name="form_1" action="script/reguest.php" method="post">
+	<main>
+		<fieldset>
+		<legend>Выбор соревнования</legend>
+		<label>Выберите соревнование:</label>
+		<select name="choice">
+			<option value="1">Класический стиль(классика)</option>
+			<option value="2">Вольный стиль(свободный стиль)</option>
+		</select><br>
+		<label>Выберите дату соревнований</label>
+		<select name="choice">
+			<option value="1">15.12.24</option>
+			<option value="2">21.12.24</option>
+			<option value="3">30.12.24</option>
+			<option value="4">2.01.25</option>
+		</select>
+		</fieldset>
+		<fieldset>
+			<legend>Дисциплины и дистанции</legend>
+			<label>Спринт:</label>
+			<input type="radio" name="sprint" value="1"><b>1.4 км<span class="tab">для мужчин</span></b><br><input type="radio" name="sprint" value="2"><b>1.4 км<span class="tab">для женщин</span></b><br><hr>
+			<label>Индивидуальный старт:</label>
+			<input type="radio" name="start" value="1"><b>10 км</b><input type="radio" name="start" value="2"><b>15 км</b><input type="radio" name="start" value="3"><b>50 км</b><br><hr>
+			<label>Масс-старт:</label>
+			<input type="radio" name="mass_m" value="1"><b>15 км</b><input type="radio" name="mass_m" value="2"><b>30 км</b><input type="radio" name="mass_m" value="3"><b>50 км<span class="tab">для мужчин</span></b><br>
+			<input type="radio" name="mass_w" value="1"><b>10 км</b><input type="radio" name="mass_w" value="2"><b>15 км<span class="tab">для женщин</span></b><br><hr>
+			<label>Эстафета:</label>
+			<input type="radio" name="rele" value="1"><b>4x10 км<span class="tab">для мужчин</span></b><br><input type="radio" name="rele" value="2"><b>4x5 км<span class="tab">для женщин</span></b><br>
+		</fieldset>
+		<fieldset>
+			<legend>Контактные данные</legend>
+			<label><b>Имя</b></label>
+			<input type="text" name="name"><br>
+			<label><b>Фамилия</b></label>
+			<input type="text" name="firstname"><br>
+			<label><b>E-mail</b></label>
+			<input type="email" name="myemail"><br>
+			<label><b>Телефон</b></label>
+			<input type="tel" name="phone"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Персональная информация</legend>
+			<label><b>Дата рождения</b></label>
+			<input type="date" name="mydate"><br>
+			<label>Пол:</label>
+			<select name="choice">
+			<option value="1">Мужчина</option>
+			<option value="2">Женщина</option>
+			</select><br>
+			<label>Вазрастная категория:</label>
+			<select name="choice">
+			<option value="1">от 18-25</option>
+			<option value="2">от 25-35</option>
+			<option value="3">от 35-45</option>
+			<option value="4">от 45-60</option>
+			<option value="5"><60</option>
+			</select><br>
+			<label>Разряд:</label>
+			<select name="choice">
+			<option value="1">I </option>
+			<option value="2">II </option>
+			<option value="3">III </option>
+			<option value="4">I юношеский</option>
+			<option value="5">II юношеский</option>
+			<option value="6">III юношеский</option>
+			</select><br>
+			<label>Клуб/организация:</label>
+			<input type="text" name="club" value="Имя организации"><br>
+			<label>Тренер:</label>
+			<input type="text" name="trener" value="Введите имя тренера"><br>
+			<label>Спортивный опыт</label><br>
+			<textarea name="message" rows="8" cols="40">Сообщение </textarea><br>
+			<label>Достижения</label><br>
+			<textarea name="message" rows="8" cols="40">Сообщение </textarea><br>
+			<label>Даете ли Вы согласие на обработку персональных данных?</label><br><input type="radio" name="data" value="1"><b>Да</b><input type="radio" name="data" value="2"><b>Нет</b>
+		</fieldset>
+		<fieldset>
+			<legend>Дата регистрации</legend>
+			<label><b>Выберите дату</b></label><input type="date" name="mydate">
+		</fieldset>
+	</main>
+	<footer>
+		<input type = "submit" value = "Отправить"><input type="reset" value="Очистить">
+	</footer>
+	</form>
+	<details>
+		<summary>Источники</summary>
+			<ol>
+				<li><a href="https://h-i.su/content/ekstremalnyj-lyzhnyj-sport.php">https://h-i.su/content/ekstremalnyj-lyzhnyj-sport.php"</a> - фон (1.12.2024)</li>
+			</ol>
+	</details>
+	<div class="button">
+	<a href="#top">&uArr;Вверх</a>
+	<a id="bottom"></a>
+	</div>
+</div>
+</body>
+</html>

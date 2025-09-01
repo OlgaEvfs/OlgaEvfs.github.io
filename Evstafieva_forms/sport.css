@@ -1,0 +1,198 @@
+.Wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background: url('Images/ski.jpg') fixed;
+	background-size: cover;
+	border: 10px solid transparent;
+	border-image: 10 repeating-linear-gradient(135deg, #EBEAFF, #EBEAFF 10px, transparent 10px, transparent 20px, darkblue 20px, darkblue 30px,transparent 30px, transparent 40px);
+	overflow: hidden;
+}
+.button {
+	color: white;
+	width: 90px;
+	font-size: 25px;
+	background: #EBEAFF;
+	margin: 20px 0 10px 20px;
+	text-align: center;
+	border-radius: 25px;
+	padding: 5px;
+}
+h1 {
+	font-family: Calibri;
+	color: #402E7A;
+	text-align: center;
+	background: #EBEAFF;
+	font-size: 40px;
+	letter-spacing: 5px;
+	margin: 0px 180px 0px 180px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 25px;
+	text-shadow: 2px 2px 2px white,
+				4px 4px 2px darkred,
+				5px 5px 2px black;
+	margin-bottom: 20px;
+}
+aside {
+	background: #EBEAFF;
+	width: 300px;
+	font-size: 25px;
+	margin-left: 20px;
+	font-family: Calibri;
+	border-radius: 25px;
+	padding: 1px 0;
+	margin-bottom: 20px;
+}
+aside li {
+	color: #402E7A;
+}
+main {
+	color: #091057;
+}
+label {
+	font-size: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+fieldset {
+	border: 2px solid #EBEAFF;
+	border-radius: 25px;
+	width: 600px;
+	background: linear-gradient(135deg, #EBEAFF, transparent 100%);
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+legend {
+	font-size: 25px;
+	border: 2px solid #EBEAFF;
+	border-radius: 25px;
+	background: #091057;
+	margin-bottom: 15px;
+	margin-left: 40px;
+	padding: 5px 10px 5px 10px;
+	color: #EBEAFF;
+}
+textarea {
+	resize: none;
+	margin-left: 20px;
+	border-radius: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
+	box-shadow: 3px 3px 3px 3px #091057;
+}
+select[name="choice"] {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 5px;
+}
+.tab {
+	margin-left: 20px;
+	font-size: 18px;
+}
+input[name="sprint"][value="1"] {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+input[name="sprint"][value="2"] {
+	margin-left: 121px;
+	margin-bottom: 15px;
+}
+input[name="start"] {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+input[name="mass_m"] {
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+input[name="mass_w"][value="1"] {
+	margin-left: 154px;
+	margin-bottom: 15px;
+}
+input[name="mass_w"][value="2"] {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+input[name="rele"][value="1"] {
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+input[name="rele"][value="2"] {
+	margin-left: 136px;
+	margin-bottom: 15px;
+}
+input[name="name"] {
+	margin-left: 70px;
+	margin-bottom: 10px;
+	width: 300px;
+	padding: 5px;
+	border-radius: 5px;
+}
+input[name="firstname"] {
+	margin-left: 25px;
+	margin-bottom: 10px;
+	width: 300px;
+	padding: 5px;
+	border-radius: 5px;
+}
+input[name="myemail"] {
+	margin-left: 53px;
+	margin-bottom: 10px;
+	width: 300px;
+	padding: 5px;
+	border-radius: 5px;
+}
+input[name="phone"] {
+	margin-left: 33px;
+	margin-bottom: 20px;
+	width: 300px;
+	padding: 5px;
+	border-radius: 5px;
+}
+input[type="date"] {
+	margin-bottom: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+input[name="club"] {
+	margin-bottom: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+input[name="trener"] {
+	margin-bottom: 10px;
+	margin-left: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+input[name="data"] {
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+footer {
+	margin-left: 250px;
+}
+input[type="submit"] {
+	margin-right: 5px;
+	padding: 5px;
+	border-radius: 5px;
+}
+input[type="reset"] {
+	padding: 5px;
+	border-radius: 5px;
+}
+details {
+	margin-left: 20px;
+	color: #091057;
+	font-size: 18px;
+	font-weight: bold;
+}

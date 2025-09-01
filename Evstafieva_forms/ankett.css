@@ -1,0 +1,169 @@
+.Wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-image: url('Images/magic.jpg');
+	background-size: cover;
+	background-position: center;
+	border: 5px solid #1F509A;
+	overflow: hidden;
+}
+h1 {
+	font-size: 40px;
+	font-family: Times New Roman;
+	background: linear-gradient(45deg, #8174A0, #1F509A);
+	color: white;
+	text-align: center;
+	letter-spacing: 10px;
+	border: 5px solid white;
+	box-shadow: 3px -1px 5px 5px;
+}
+aside {
+	background: white;
+	width: 300px;
+	font-size: 25px;
+	margin-left: 20px;
+	font-family: Times New Roman;
+	border-radius: 5px;
+	padding: 1px 0;
+	border: 2px solid #1F509A;
+}
+aside li {
+	color: #1F509A;
+}
+h2 {
+	background: linear-gradient(45deg, #8174A0, #1F509A);
+	text-align: center;
+	color: white;
+	font-family: Times New Roman;
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-left: 320px;
+	margin-right: 325px;
+	border: 2px solid white;
+	box-shadow: 3px 1px 5px 5px;
+}
+main {
+	color: white;
+	font-family: Times New Roman;
+}
+fieldset {
+	border: 5px solid white;
+	border-radius: 5px;
+	width: 600px;
+	margin-left: 320px;
+	background: linear-gradient(45deg, #8174A0, #1F509A, transparent 100%);
+	margin-bottom: 20px;
+}
+legend {
+	font-size: 25px;
+	border: 2px solid white;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #8174A0, #1F509A);
+	margin-bottom: 20px;
+	margin-left: 40px;
+	padding: 0 5px 0 5px;
+}
+label {
+	font-size: 18px;
+	margin-left: 50px;
+}
+textarea {
+	resize: none;
+	margin-left: 50px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+input[name="name"] {
+	margin-left: 70px;
+	margin-bottom: 10px;
+	width: 300px;
+}
+input[name="firstname"] {
+	margin-left: 29px;
+	margin-bottom: 10px;
+	width: 300px;
+}
+input[name="myemail"] {
+	margin-left: 54px;
+	margin-bottom: 10px;
+	width: 300px;
+}
+input[name="phone"] {
+	margin-left: 37px;
+	margin-bottom: 20px;
+	width: 300px;
+}
+input[name="gender"] {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+input[name="Age"] {
+	margin-left: 10px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+input[type="color"] {
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+select[name="choice"] {
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+input[name="mytime"] {
+	margin-left: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 20px;
+}
+input[name="choiceradio"] {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 65px;
+}
+input[name="recomend"] {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 65px;
+}
+input[type="range"] {
+	margin-left: 65px;
+	margin-bottom: 20px;
+}
+input[type="date"] {
+	margin-bottom: 15px;
+	margin-left: 5px;
+	border-radius: 5px;
+	height: 20px;
+}
+footer {
+	text-align: center;
+}
+input[type="submit"] {
+	margin-right: 5px;
+	padding: 3px;
+}
+input[type="reset"] {
+	padding: 3px;
+}
+.button {
+	color: white;
+	border: 2px solid #1F509A;
+	width: 90px;
+	font-size: 25px;
+	background: white;
+	margin: 10px 0 10px 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+details {
+	margin-left: 20px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+details a {
+	color: white;
+}

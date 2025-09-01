@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing page</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper"> 
+            <header>
+                <div class="navigation">
+                    <div class="logo">
+                        <img src="Images/logo.png" alt="Logo">
+                    </div>
+                    <nav>
+                        <a href="index.html">ГЛАВНАЯ</a>
+                        <a href="#menu">МЕНЮ</a>
+                        <a href="#address">КОНТАКТЫ</a>
+                        <a href="form.html">ЗАКАЗ</a>
+                    </nav>
+                </div>
+                <div class="offer">
+                    <h1>В честь открытия - подарок каждому!</h1>
+                    <h2>Только первую неделю после открытия дарим <span class="red">-20%</span> на все предложения!<br>Не упусти момент!</h2>
+                    <div class="button_offer">
+                        <a href="#menu" class="btn">Получить скидку -20%</a>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="container">
+                    <div class="offers">
+                        <h2>Наши предложения</h2>
+                    </div>
+                    <div class="menu" id="menu">
+                        <div class="name_dish">
+                            <h3><u>Салаты и закуски</u></h3>
+                            <p><span class="redtext">Том Ям - 3.10 Є</span><br>Тайский острый суп с креветками, грибами, кокосовым молоком, лемонграссом и лаймом.</p>
+                            <p><span class="redtext">Гуй Чжао - 2.80 Є</span><br>Китайские пельмени с начинкой из   свинины и капусты, подаются с соевым соусом.</p>
+                            <p><span class="redtext">Нам Праик - 2.50 Є</span><br>Вьетнамские спринг-роллы с креветками, свежими овощами и рисовой бумагой, подаются с соусом на основе арахиса.</p>
+                            <p><span class="redtext">Кимчи - 2 Є</span><br>Корейская ферментированная капуста с острым перцем и чесноком.</p>
+                            <p><span class="redtext">Лао Лонг - 3.20 Є</span><br>Тайский салат с лапшой, курицей, арахисом и свежими овощами, заправленный соусом из лайма и рыбы.</p>
+                            <img src="Images/dish.jpg" alt="dish">
+                        </div>
+                        <div class="name_dish">
+                            <img src="Images/dish2.jpg" alt="dish2">
+                            <h3><u>Основные блюда</u></h3>
+                            <p><span class="redtext">Рамен с свининой - 4.20 Є</span><br>Японский суп с лапшой, свининой, яйцом, мисо пастой и зеленым луком.</p>
+                            <p><span class="redtext">Говядина с брокколи в соевом соусе - 4.50 Є</span><br>Китайская говядина с брокколи в соевом соусе с добавлением кунжутного масла.</p>
+                            <p><span class="redtext">Курица по-сичуаньски - 3.90 Є</span><br>Китайская курица с острым соусом, перцем чили и чесноком, подается с рисом.</p>
+                            <p><span class="redtext">Таджин с морепродуктами - 4.70 Є</span><br>Стекающий на паре горшок с морепродуктами, овощами и ароматными специями.</p>
+                            <p><span class="redtext">Кальмары в остром соусе - 4 Є</span><br>Жареные кальмары с чили, чесноком и соусом из соевого соуса.</p>
+                            <p><span class="redtext">Том Кха - 3.90 Є</span><br>Тайский суп с курицей, кокосовым молоком, галангой, лемонграссом и лаймом.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="menu">
+                        <div class="name_dish">
+                            <h3><u>Суши и роллы</u></h3>
+                            <p><span class="redtext">Калифорния(8шт) - 3.90 Є</span><br>Ролл с крабом и авокадо.</p>
+                            <p><span class="redtext">Филадельфия(8шт) - 4.50 Є</span><br>Ролл с лососем, огурцом и сливочным сыром.</p>
+                            <p><span class="redtext">Кунсей(8шт) - 4.50 Є</span><br>Ролл с жареным тунцом, авокадо и свежими овощами.</p>
+                            <p><span class="redtext">Нигири с тунцом и лососем(шт) - 2.80 Є</span><br>Японские рисовые лепешки с свежими кусочками рыбы.</p>
+                            <img src="Images/dish3.jpg" alt="dish3" id="img3_margin">
+                        </div>
+                        <div class="name_dish">
+                            <img src="Images/dish4.jpg" alt="dish4" id="img4_margin">
+                            <h3><u>Вегетарианские блюда</u></h3>
+                            <p><span class="redtext">Темпе с овощами в соусе терияки - 3.10 Є</span><br>Жареные соевые котлеты с овощами, соус терияки и кунжут</p>
+                            <p><span class="redtext">Карри с тофу и овощами - 3.60 Є</span><br>Индийское карри с тофу, картофелем и овощами.</p>
+                            <p><span class="redtext">Жареный рис с овощами и орехами кешью - 3.10 Є</span><br>Вегетарианский жареный рис с орехами и специями.</p>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="name_dish">
+                            <h3><u>Гарниры</u></h3>
+                            <p>Жареный рис с яйцом и овощами - <span class="redtext">1.70 Є</span></p>
+                            <p>Отварной жасминовый рис - <span class="redtext">1.10 Є</span></p>
+                            <p>Салат из водорослей - <span class="redtext">1.70 Є</span></p>
+                            <img src="Images/dish5.jpg" alt="dish5" id="img5_margin">
+                            <h3><u>Десерты</u></h3>
+                            <p><span class="redtext">Моти с красной фасолью - 2 Є</span><br>Японский десерт из рисового теста с начинкой из сладкой фасоли.</p>
+                            <p>Тайский манго с клейким рисом - <span class="redtext">2.80 Є</span></p>
+                            <p><span class="redtext">Кокосовый пудинг - 2.50 Є</span><br>Легкий пудинг с кокосовым молоком и манго.</p>
+                        </div>
+                        <div class="name_dish">
+                            <img src="Images/dish6.jpg" alt="dish6" id="img6_margin">
+                            <h3><u>Напитки</u></h3>
+                            <p>Зеленый чай (японский) - <span class="redtext">1.10 Є</span></p>
+                            <p>Чай из жасмина (китайский) - <span class="redtext">1.40 Є</span></p>
+                            <p>Кокосовая вода - <span class="redtext">2 Є</span></p>
+                            <p>Коктейль "Тайский стиль" (с ананасом и лаймом) - <span class="redtext">2.80 Є</span></p>
+                            <p>Соки (ананас, манго, апельсин) - <span class="redtext">1.70 Є</span></p>
+                            <div class="button_order">
+                                <a href="form.html" class="order_button">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="about_us">
+                        <h2>О нас</h2>
+                        <p>Вдохновение для открытия этого ресторана пришло к его владельцу после долгих лет, проведенных в разных уголках Азии. Много лет назад, он отправился в путешествие, которое стало настоящим открытием. Его путь привел его в Таиланд, Японию, Вьетнам и Китай, где он не только полюбил культуру, но и открыл для себя уникальные вкусы и традиции местной кухни.</p>
+                        <p>Так родилась идея открыть ресторан, где каждый гость может почувствовать себя на улицах Токио, Бангкока или Ханоя.</p>
+                        <p>В ресторане особое внимание уделяется использованию свежих продуктов, уникальных специй и тех самых рецептов, которые были выучены и испытаны в путешествиях. Задача ресторана — привнести в повседневную жизнь каждого гостя кусочек Азии и подарить ему неповторимый гастрономический опыт.</p>
+                    </div>
+                    <div class="team">
+                        <h2>Наша команда</h2>
+                        <div class="photo">
+                            <img src="Images/team.jpg" alt="team">
+                            <img src="Images/team2.jpg" alt="team2">
+                        </div>
+                        <div class="photo">
+                            <img src="Images/team3.jpg" alt="team3">
+                            <img src="Images/team4.jpg" alt="team4">
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="review1">
+                        <h2>Отзывы</h2>
+                        <div class="people_review"></div>
+                    </div>
+                    <div class="review">
+                        <h2>Оставить отзывы</h2>
+                        <form name="form_1" action="script/reguest.php" method="post">
+
+                        <label><b>Имя:</b></label>
+                        <input type="text" name="name"><br>
+
+                        <label><b>Э-почта:</b></label>
+                        <input type="email" name="myemail"><br>
+
+                        <label><b>Оценка:</b></label>
+                        <select name="evaluation" required>
+                            <option value="1"></option>
+                            <option value="2"><b>Очень плохо</b></option>
+                            <option value="3"><b>Плохо</b></option>
+                            <option value="4"><b>Нейтрально</b></option>
+                            <option value="5"><b>Хорошо</b></option>
+                            <option value="6"><b>Отлично</b></option>
+                        </select><br>
+                        <label><b>Отзыв:</b></label><br>
+                        <textarea name="review" rows="8" cols="60" required></textarea><br>
+                        <div class="button_review">
+                            <a href="" class="order_button">Отправить отзыв</a>
+                        </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="info">
+                        <div class="map">
+                            <img src="Images/map.jpg" alt="map" id="map_img">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="time">
+                            <div class="work-hours">
+                                <h3><u>Часы работы</u></h3>
+                                <div class="row">
+                                    <span class="day">Понедельник</span>
+                                    <span class="line"></span>
+                                    <span class="hours">8 - 20</span>
+                                </div>
+                                <div class="row">
+                                    <span class="day">Вторник</span>
+                                    <span class="line"></span>
+                                    <span class="hours">8 - 20</span>
+                                </div>
+                                <div class="row">
+                                    <span class="day">Среда</span>
+                                    <span class="line"></span>
+                                    <span class="hours">8 - 20</span>
+                                </div>
+                                <div class="row">
+                                    <span class="day">Четверг</span>
+                                    <span class="line"></span>
+                                    <span class="hours">8 - 20</span>
+                                </div>
+                                <div class="row">
+                                    <span class="day">Пятница</span>
+                                    <span class="line"></span>
+                                    <span class="hours">11 - 23</span>
+                                </div>
+                                <div class="row">
+                                    <span class="saturday">Суббота</span>
+                                    <span class="line"></span>
+                                    <span class="hours">11 - 23</span>
+                                </div>
+                                <div class="row">
+                                    <span class="sunday">Воскресенье</span>
+                                    <span class="line"></span>
+                                    <span class="hours">11 - 23</span>
+                                </div>
+                            </div>
+                            <img src="Images/resto.jpg" alt="resto" id="img_resto_margin">
+                        </div>
+                        <div class="time" id="address">
+                            <img src="Images/resto2.jpg" alt="resto" id="img2_resto_margin">
+                            <h3><u>Контакты</u></h3>
+                            <p>Jõhvi, Kutse tänav 13, 41533</p>
+                            <p>+372 5678541</p>
+                            <p>firedragon@gmail.com</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="button_review">
+                    <button onclick="location.href='form.html'" class="button_footer">Открыть форму заказа</button>
+                </div> 
+            </footer>
+        </div>
+    </body>
+</html>

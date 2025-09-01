@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Анкета</title>
+	<link rel="stylesheet" type="text/css" href="ankett.css">
+</head>
+<body>
+<div class="Wrapper">
+	<div class="button">
+	<a id="top"></a>
+	<a href="#bottom">&dArr;<b>Вниз</b></a>
+	</div>
+	<header>
+		<h1>РЕСТОРАН "МАГИЯ"</h1>
+	</header>
+	<aside>
+		<nav>
+			<ul type="square">
+				<li><a href="index.html">Главная страница</a></li>
+				<li><a href="registr.html">Регистрация</a></li>
+				<li><a href="sport.html">Лыжные соревнования</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<form name="form_1" action="script/reguest.php" method="post">
+	<main>
+		<h2>Анкета посетителя ресторана</h2>
+		<fieldset>
+			<legend><b>Контактные данные<b></legend>
+			<label><b>Имя</b></label>
+			<input type="text" name="name" value="Введите Имя"><br>
+			<label><b>Фамилия</b></label>
+			<input type="text" name="firstname" value="Введите фамилию"><br>
+			<label><b>E-mail</b></label>
+			<input type="email" name="myemail" value="Введите электронный адрес"><br>
+			<label><b>Телефон</b></label>
+			<input type="tel" name="phone" value="Введите номер телефона"><br>
+		</fieldset>
+		<fieldset>
+			<legend><b>Персональная информация</b></legend>
+			<label><b>Ваш пол:</b></label><input type="radio" name="gender" value="1"><b>Женский</b><input type="radio" name="gender" value="2"><b>Мужской</b><br>
+			<label><b>Возраст:</b></label><input type="text" name="Age"><br>
+			<label><b>Ваш любимый цвет?</b></label><input type="color"><br>
+			<label><b>Ваша любимая кухня?</b></label><select name="choice">
+			<option value="1">Выберите из списка</option>
+			<option value="2">Русская</option>
+			<option value="3">Итальянская</option>
+			<option value="4">Японская</option>
+			<option value="5">Азиатская</option>
+			<option value="6">Американская</option>
+			<option value="7">Армянская</option>
+			<option value="8">Белорусская</option>
+			<option value="9">Греческая</option>
+			<option value="10">Грузинская</option>
+			<option value="11">Индийская</option>
+			</select><br>
+			<label><b>Какие блюда Вы бы хотели видеть в меню?</b></label><br>
+			<textarea name="message" rows="10" cols="45">Напишите свои предложения</textarea>
+		</fieldset>
+		<fieldset>
+			<legend><b>Оценка нашего заведения</b></legend>
+			<label><b>Дата и время посищения</b></label><input type="datetime-local" name="mytime"><br>
+			<label><b>Почему вы выбрали наше заведение?</b></label><br>
+			<input type="radio" name="choiceradio" value="1"><i><b>Недалеко от дома/работы</b></i><br>
+			<input type="radio" name="choiceradio" value="2"><i><b>Увидел рекламу</b></i><br>
+			<input type="radio" name="choiceradio" value="3"><i><b>Посоветовали</b></i><br>
+			<input type="radio" name="choiceradio" value="4"><i><b>Соотношение цены и качества</b></i><br>
+			<label><b>Как вы оцениваете наше заведение?(по 5-ти балльной системе)</b></label><br>
+			<input type="range" name="hind" min="1" max="5"><br>
+			<label><b>Вы будете рекомендовать наше заведение своим знакомым?</b></label><br>
+			<input type="radio" name="recomend" value="1"><b>Да</b><br>
+			<input type="radio" name="recomend" value="2"><b>Нет</b><br>
+		</fieldset>
+		<fieldset>
+			<legend><b>Дата заполнения анкеты</b></legend>
+			<label><b>Выберите дату</b></label><input type="date" name="mydate">
+		</fieldset>
+	</main>
+	<footer>
+		<input type = "submit" value = "Отправить"><input type="reset" value="Очистить">
+	</footer>
+	</form>
+	<details>
+		<summary>Источники</summary>
+			<ol>
+				<li><a href="https://inspiregroup.pro/stati/neobychnyj-dizajn-restorana/">https://inspiregroup.pro/stati/neobychnyj-dizajn-restorana/</a> - фон (1.12.2024)</li>
+			</ol>
+	</details>
+	<div class="button">
+	<a href="#top">&uArr;Вверх</a>
+	<a id="bottom"></a>
+	</div>
+</div>		
+</body>
+</html>

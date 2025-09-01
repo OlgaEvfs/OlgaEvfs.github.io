@@ -1,0 +1,112 @@
+body {
+	background: #B9E5E8;
+}
+.wrapper {
+	width: 1380px;
+	margin: 0 auto;
+}
+header {
+	overflow: hidden;
+}
+h1 {
+	text-align: center;
+	color: blue;
+	font-size: 60px;
+	font-family: Book Antiqua;
+	-webkit-text-stroke: 3px darkblue;
+	text-stroke: 3px darkblue;
+	letter-spacing: 2px;
+	background: #7AB2D3;
+}
+.aside_right {
+	float: right;
+	margin-right: 20px;
+	width: 160px;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: Book Antiqua;
+	background: #7AB2D3;
+	border-radius: 25px;
+	position: sticky;
+	top: 0;
+}
+aside ul {
+	background: #7AB2D3;
+}
+details {
+	font-family: Book Antiqua;
+	color: darkblue;
+	margin-bottom: 50px;
+	background: #7AB2D3;
+}
+summary {
+	font-size: 25px;
+	font-weight: bold;
+}
+main {
+	width: 1130px;
+	margin-right: 200px;
+	margin-left: 30px;
+	text-align: justify;
+}
+p {
+	font-family: Book Antiqua;
+	color: #0B192C;
+	text-indent: 20px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+h2 {
+	background: #7AB2D3;
+	color: darkblue;
+	margin-bottom: 25px;
+	text-align: center;
+}
+img {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border: 3px dashed darkblue;
+	position: relative;
+	left: 225px;
+	box-shadow: 10px 10px 10px darkblue;
+	border-radius: 25px;
+
+}
+p img {
+	float: left;
+	position: static;
+	border: none;
+	box-shadow: none;
+}
+ul {
+	background: #DFF2EB;
+	margin-bottom: 25px;
+	font-family: Book Antiqua;
+	color: #0B192C;
+	font-weight: bold;
+	font-size: 18px;
+}
+ol {
+	font-weight: bold;
+	font-size: 18px;
+}
+ol p {
+	font-family: Book Antiqua;
+	font-weight: normal;
+}
+h3 {
+	text-indent: 20px;
+	color: blue;
+	font-size: 25px;
+}
+footer {
+	width: 1380px;
+	clear: both;
+	text-align: center;
+	color: #0B192C;
+	text-shadow:3px 3px 4px darkblue;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Book Antiqua;
+	padding-top: 30px;
+}

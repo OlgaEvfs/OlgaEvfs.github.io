@@ -1,0 +1,35 @@
+body {
+	background-color: #FFEADD;
+}
+h1 {
+	font-family: Times New Roman;
+	text-align: center;
+	font-size: 50pt;
+	color: darkred;
+}
+h2 {
+	font-family: Time New Roman;
+	font-style: italic;
+	color: darkred;
+	width: 1280px;
+	margin: 0 auto;
+	line-height: 2cm;
+}
+h3 {
+	font-family: Time New Roman;
+	width: 1280px;
+	margin: 0 auto;
+	line-height: 2cm;
+}
+p {
+	font-family: Times New Roman;
+	text-align: justify;
+	width: 1280px;
+	margin: 0 auto;
+	text-indent: 1cm;
+}
+img {
+	border: 5px solid darkred;
+	margin-top: 1cm;
+	margin-bottom: 1cm;
+}

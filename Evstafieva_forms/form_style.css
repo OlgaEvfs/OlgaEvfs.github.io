@@ -1,0 +1,67 @@
+.Wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	background: #E1F0DA;
+	padding: 20px;
+	border: 10px solid #294B29;
+	overflow: hidden;
+}
+.redtext {
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}
+.greentext {
+	color: #399918;
+	font-weight: bold;
+	font-size: 20px;
+}
+.bluetext {
+	color: darkblue;
+	font-weight: bold;
+	font-size: 20px;
+}
+h1 {
+	font-size: 45px;
+	color: #31511E;
+	font-family: Times New Roman;
+	text-align: center;
+}
+p {
+	text-align: justify;
+	font-family: Times New Roman;
+	font-size: 18px;
+	line-height: 25px;
+	color: black;
+}
+h2 {
+	font-family: Times New Roman;
+	color: #31511E;
+	margin-bottom: 35px;
+	margin-top: 35px;
+	background: #FFFBE6;
+	width: 600px;
+}
+.kood {
+	font-size: 20px;
+	color: #FD5D5D;
+	margin-bottom: 15px;
+}
+input {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+li {
+	font-size: 20px;
+}
+legend {
+	text-align: center;
+}
+fieldset {
+	text-align: center;
+}
+.image {
+	border-radius: 25%;
+}
+/*&lt;-знак меньше*/
+/*&gt;-знак больше*/

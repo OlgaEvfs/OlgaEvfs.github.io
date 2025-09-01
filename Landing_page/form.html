@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form page</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="navigation">
+                    <img src="Images/logo.png" alt="Logo">
+                    <nav>
+                        <p><a href="index.html">ГЛАВНАЯ</a></p>
+                        <p><a href="index.html">МЕНЮ</a></p>
+                        <p><a href="index.html">КОНТАКТЫ</a></p>
+                        <p><a href="form.html">ЗАКАЗ</a></p>
+                    </nav>
+                </div>
+            </header>
+            <form name="form_1" action="script/reguest.php" method="post">
+            <main>
+                <h1>Форма заказа</h1>
+                <fieldset class="one_fieldset">
+                    <legend><b>Информация о клиенте</b></legend>
+                        <label><b>Имя:</b></label>
+                        <input type="text" name="name"><br>
+
+                        <label><b>Фамилия:</b></label>
+                        <input type="text" name="last_name"><br>
+
+                        <label><b>Телефон:</b></label>
+                        <input type="tel" name="phone"><br>
+
+                        <label><b>Э-почта:</b></label>
+                        <input type="email" name="myemail"><br>
+                </fieldset>
+                <fieldset class="two_fieldset">
+                    <legend><b>Информация о заказе</b></legend>
+                        <table class="order-table" id="orderTable">
+                        <tr>
+                            <th>
+                                <select name="choice">
+                                    <option value="1">Наименование</option>
+                                        <optgroup label="Салаты и закуски">
+                                            <option span class="redtext" value="2">Том Ям - 3.10 Є</option>
+                                            <option span class="redtext" value="3">Гуй Чжао - 2.80 Є</option>
+                                            <option span class="redtext" value="4">Нам Праик - 2.50 Є</option>
+                                            <option span class="redtext" value="5">Кимчи - 2 Є</option>
+                                            <option span class="redtext" value="6">Лао Лонг - 3.20 Є</option>
+                                        </optgroup>
+                                        <optgroup label="Основные блюда">
+                                            <option span class="redtext" value="7">Рамен с свининой - 4.20 Є</option>
+                                            <option span class="redtext" value="8">Говядина с брокколи в соевом соусе - 4.50 Є</option>
+                                            <option span class="redtext" value="9">Курица по-сичуаньски - 3.90 Є</option>
+                                            <option span class="redtext" value="10">Таджин с морепродуктами - 4.70 Є</option>
+                                            <option span class="redtext" value="11">Кальмары в остром соусе - 4 Є</option>
+                                            <option span class="redtext" value="12">Том Кха - 3.90 Є</option>
+                                        </optgroup>
+                                        <optgroup label="Суши и роллы">
+                                            <option span class="redtext" value="13">Калифорния - 3.90 Є</option>
+                                            <option span class="redtext" value="14">Филадельфия - 4.20 Є</option>
+                                            <option span class="redtext" value="15">Кунсей - 4.50 Є</option>
+                                            <option span class="redtext" value="16">Нигири с тунцом и лососем - 2.80 Є</option>
+                                        </optgroup>
+                                        <optgroup label="Вегетарианские блюда">
+                                            <option span class="redtext" value="17">Темпе с овощами в соусе терияки - 3.10 Є</option>
+                                            <option span class="redtext" value="18">Карри с тофу и овощами - 3.60 Є</option>
+                                            <option span class="redtext" value="19">Жареный рис с овощами и орехами кешью - 3.10 Є</option>
+                                        </optgroup>
+                                        <optgroup label="Гарниры">
+                                            <option span class="redtext" value="20">Жареный рис с яйцом и овощами - 1.70 Є</option>
+                                            <option span class="redtext" value="21">Отварной жасминовый рис -1.10 Є</option>
+                                            <option span class="redtext" value="22">Салат из водорослей - 1.70 Є</option>
+                                        </optgroup>
+                                        <optgroup label="Десерты">
+                                            <option span class="redtext" value="23">Моти с красной фасолью - 2 Є</option>
+                                            <option span class="redtext" value="24">Тайский манго с клейким рисом - 2.80 Є</option>
+                                            <option span class="redtext" value="25">Кокосовый пудинг - 2.50 Є</option>
+                                        </optgroup>
+                                        <optgroup label="Напитки">
+                                            <option span class="redtext" value="26">Зеленый чай (японский) - 1.10 Є</option>
+                                            <option span class="redtext" value="27">Чай из жасмина (китайский) - 1.40 Є</option>
+                                            <option span class="redtext" value="28">Кокосовая вода - 2 Є</option>
+                                            <option span class="redtext" value="29">Коктейль "Тайский стиль" (с ананасом и лаймом) - 2.80 Є</option>
+                                            <option span class="redtext" value="30">Соки (ананас, манго, апельсин) - 1.70 Є</option>
+                                        </optgroup>
+                                </select>
+                            </th>
+                            <th>
+                                <input type="number" name="quantity" min="1">
+                            </th>
+                            <th>
+                                <input type="text" name="comment" value="Комментарии">
+                            </th>
+                            <th>
+                                <button type="button" class="btn-add" onclick="addRow()"><b>+</b></button>
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset class="three_fieldset">
+                    <legend><b>Информация о доставке</b></legend>
+                        <label><b>Улица:</b></label>
+                        <input type="text" name="street"><br>
+
+                        <label><b>Дом:</b></label>
+                        <input type="text" name="house"><br>
+
+                        <label><b>Квартира:</b></label>
+                        <input type="text" name="apartament"><br>
+
+                        <label><b>Город:</b></label>
+                        <input type="text" name="sity"><br>
+
+                        <label><b>Индекс:</b></label>
+                        <input type="text" name="index"><br>
+
+                        <h3>Время доставки</h3>
+                        <input type="radio" name="choiceradio" value="1"><span class="yellow"><b>Как можно скорее</b></span><br>
+                        <input type="radio" name="choiceradio" value="1"><span class="yellow"><b>К определенному времени</b></span>
+                        <input type="text" name="time">
+                </fieldset>
+                <fieldset class="four_fieldset">
+                    <legend><b>Cпособ оплаты</b></legend>
+                        <input type="radio" name="money" value="2"><span class="yellow"><b>Наличными при получении</b></span><br>
+                        <input type="radio" name="money" value="2"><span class="yellow"><b>Картой при получении</b></span><br>
+                        <input type="radio" name="money" value="2"><span class="yellow"><b>Банковская ссылка</b><br>
+                
+                        <input type="radio" name="choice2" value="1"><span class="yellow"><b>Я согласен(-на) с условиями доставки и обработки персональных данных</b></span>
+                </fieldset>
+            </main>
+            <footer>
+                <input type="submit" value="Оформить заказ">
+                <input type="reset" value="Очистить">
+            </footer>
+            </form>
+        </div>
+    </body>
+</html>
+            

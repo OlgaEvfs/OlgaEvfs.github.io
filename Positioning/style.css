@@ -1,0 +1,79 @@
+body {
+	background: lightgray;
+}
+h1 {
+	border: 2px solid blue;
+	background: lightblue;
+	text-align: center;
+	font-size: 30pt;
+	font-family: Arial;
+}
+.block_1 {
+	background: lightcoral;
+	border: 2px dotted darkred;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+}
+.block_2 {
+	background: lightcyan;
+	border: 2px dashed blue;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+}
+.block_3 {
+	background: lightgoldenrodyellow;
+	border: 2px double blue;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+position: sticky;
+top: 100px;
+left: 100px;
+}
+.block_4 {
+	background: lightpink;
+	border: 2px groove blue;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+	/*top: 0px;
+	left: 200px;
+	position: relative;*/
+		
+	
+}
+.block_5 {
+	background: lightgreen;
+	border: 2px ridge blue;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+	/*position: absolute;*/
+}
+}
+.block_6 {
+	background: lightsalmon;
+	border: 2px inset blue;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+}
+.container {
+	width: 1000px;
+	background: red;
+	border: blue;
+.block_7 {
+	background: lightskyblue;
+	border: 2px outset blue;
+	margin-left: 0.5cm;
+	margin-bottom: 0.5cm;
+	width: 800px;
+}
+footer {
+	/*position: relative;*/
+/*	left: 1100px;*/
+	border:  2px solid black;
+	background: lightblue;
+}

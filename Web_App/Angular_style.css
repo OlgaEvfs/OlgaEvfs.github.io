@@ -1,0 +1,139 @@
+body {
+	background: #FFE5CA;
+}
+.wrapper {
+	width: 1380px;
+	margin: 0 auto;
+}
+header {
+	overflow: hidden;
+}
+h1 {
+	text-align: center;
+	color: #FA9884;
+	font-size: 60px;
+	font-family: Helvetica;
+	-webkit-text-stroke: 3px darkred;
+	text-stroke: 3px darkred;
+	letter-spacing: 2px;
+}
+.aside_right {
+	float: right;
+	margin-right: 20px;
+	width: 160px;
+	font-weight: bold;
+	line-height: 50px;
+	font-family: Helvetica;
+	background: #E74646;
+	border-radius: 25px;
+	position: sticky;
+	top: 0;
+}
+aside ul {
+	background: #E74646;
+}
+details {
+	font-family: Helvetica;
+	color: #FFF3E2;
+	margin-bottom: 50px;
+	background: #E74646;
+}
+summary {
+	font-size: 25px;
+	font-weight: bold;
+}
+ol {
+	font-weight: bold;
+	font-size: 18px;
+}
+main {
+	width: 1130px;
+	margin-right: 200px;
+	margin-left: 30px;
+	text-align: justify;
+}
+img {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	position: relative;
+	left: 220px;
+	box-shadow: 10px 10px 10px darkred;
+	border-radius: 25px;
+}
+p img {
+	float: right;
+	margin: 0px 10px 30px 10px;
+	border-radius: 25px;
+	position: static;
+}
+h2 {
+	background: #E74646;
+	color: #FFF3E2;
+	margin-bottom: 25px;
+	text-align: center;
+}
+p {
+	font-family: Helvetica;
+	color: darkred;
+	text-indent: 20px;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+h3{
+	text-indent: 20px;
+	font-size: 25px;
+	color: #070A52;
+}
+ul {
+	background: #FFF3E2;
+	margin-bottom: 25px;
+	font-family: Helvetica;
+	color: darkred;
+	font-weight: bold;
+	font-size: 18px;
+}
+article {
+	width: 310px;
+	height: 440px;
+	float: left;
+	margin: 0px 25px 25px 25px;
+	text-align: justify;
+	border: 2px solid darkred;
+	padding: 0px 5px;
+	background: #FA9884;
+}
+article h3 {
+	text-align: center;
+	background: linear-gradient(45deg, rgb(244, 231, 240), rgb(246, 36, 16) 49%);
+	color: white;
+}
+article p {
+	color: #070A52;
+}
+.text {
+	clear: both;
+}
+.section article{
+	width: 450px;
+	height: 250px;
+	float: left;
+	margin: 0px 50px 25px 50px;
+	text-align: justify;
+	border: 2px solid darkred;
+	padding: 0px 5px;
+	background: #FA9884;
+}
+footer {
+	width: 1380px;
+	clear: both;
+	color: #FFF3E2;
+	text-shadow:3px 3px 4px darkred;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Helvetica;
+	padding-top: 30px;
+}
+footer ul {
+	background: #E74646;
+	color: white;
+}

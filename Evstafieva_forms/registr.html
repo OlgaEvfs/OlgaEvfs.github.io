@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="registr.css">
+</head>
+<body>
+<div class="Wrapper">
+	<a id="top"></a>
+	<a href="#bottom">&dArr;<b>Вниз</b></a>
+	<header>
+		<h1>РЕГИСТРАЦИЯ ПОДПИСЧИКА</h1>
+	</header>
+	<aside>
+		<nav>
+			<ul type="square">
+				<li><a href="index.html"><b>Главная страница</b></a></li>
+				<li><a href="ankett.html"><b>Ресторан "Магия"</b></a></li>
+				<li><a href="sport.html"><b>Лыжные соревнования</b></a></li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<form name="form_1" action="script/reguest.php" method="post">
+			<label><b>Как вас зовут?</b></label><input type="text" name="name"><br>
+			<label><b>Страна проживания?</b></label><input type="countury" name="countury"><br>
+			<label><b>Ваш адрес электронной<br>почты:</b></label><input type="email" name="myemail"><br>
+			<label><b>Ваш пол:</b></label><input type="radio" name="sex" value="1"><b>Женский</b><input type="radio" name="sex" value="2"><b>Мужской</b><br>
+			<label><b>Укажите возраст</b></label><input type="number" name="age" min="15" max="80"><br>
+			<label><b>Ваша уровень владения компьютером:</b></label><br>
+			<input type="radio" name="choiceradio" value="1"><b>Начальный</b><br>
+			<input type="radio" name="choiceradio" value="2"><b>Средний</b><br>
+			<input type="radio" name="choiceradio" value="3"><b>Профессиональный</b><br>
+			<input type="radio" name="choiceradio" value="4"><b>Не владею</b><br>
+			<label><b>Откуда о нас узнали?</b></label><select name="choice">
+			<option value="1">-</option>
+			<option value="2">Интеренет</option>
+			<option value="3">Печатные издания</option>
+			<option value="4">Посоветовали знакомые</option>
+			<option value="5">Телевидение</option>
+			</select><br>
+			<label><b>Дополнительная информация</b></label><br>
+			<textarea name="message" rows="12" cols="67"></textarea><br>
+			<label><b>Дата подписки</b></label><input type="date" name="mydate">
+	</main>
+	<footer>
+		<input type = "submit" value="одписаться"><input type="reset" value="очистить">
+	</footer>
+		</form>
+	<a href="#top">&uArr;<b>Вверх</b></a>
+	<a id="bottom"></a>
+</div>		
+</body>
+</html>

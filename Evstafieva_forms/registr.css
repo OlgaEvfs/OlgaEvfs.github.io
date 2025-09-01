@@ -1,0 +1,118 @@
+.Wrapper {
+	width: 600px;
+	margin: 65px auto;
+	background: grey;
+	padding: 25px;
+	border: 10px solid transparent;
+	border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+	overflow: hidden;
+}
+h1 {
+	text-align: center;
+	font-size: 22px;
+	font-family: Arial;
+	color: red;
+	text-shadow: 6px 4px 0px white;
+	background: #A7CECC;
+	padding: 25px;
+	width: 450px;
+	margin: auto;
+	border: 10px solid transparent;
+	border-image: repeating-linear-gradient(90deg, #F8463F 20px, #F8463F 20px);
+}
+aside {
+	width: 450px;
+	margin-left: 20px;
+	color: #A7CECC;
+}
+aside b {
+	color: #A7CECC;
+}
+main {
+	margin-left: 40px;
+}
+label {
+	color: white;
+	margin-right: 3px;
+}
+input[type='text'] {
+	margin: 10px 0;
+	padding: 5px;
+	border: 2px solid red;
+	border-radius: 5px;
+	background-color: #A7CECC;
+	width: 390px;
+}
+input[type='countury'] {
+	margin: 10px 0;
+	padding: 5px;
+	border: 2px solid red;
+	border-radius: 5px;
+	background-color: #A7CECC;
+	width: 341px;
+}
+input[type='email'] {
+	margin: 10px 0;
+	padding: 5px;
+	border: 2px solid #A7CECC;
+	border-radius: 5px;
+	background-color: red;
+	width: 447px;
+}
+b {
+	color: white;
+}
+input[type='number'] {
+	text-align: center;
+	background-color: red;
+	color: blue;
+	margin-bottom: 5px;
+}
+select[name='choice'] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #A7CECC;
+}
+textarea {
+	background-color: #A7CECC;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px 2px red;
+	padding: 10px;
+}
+input[type='date'] {
+	border: 2px solid #A7CECC;
+	border-radius: 13px;
+	background-color: red;
+	text-align: center;
+	color: white;
+	padding: 4px 0;
+	width: 150px;
+}
+footer {
+	text-align: center;
+	margin-top: 10px;
+}
+input[type='submit'] {
+	border: 2px solid red;
+	border-radius: 15px;
+	background-color: #A7CECC;
+	color: red;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding: 5px;
+	width: 110px;
+	margin-right: 5px;
+}
+input[type='reset'] {
+	border: 2px solid red;
+	border-radius: 15px;
+	background-color: #A7CECC;
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+	font-variant: small-caps;
+	padding: 5px;
+	width: 110px;
+}

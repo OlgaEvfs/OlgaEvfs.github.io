@@ -1,0 +1,136 @@
+body {
+	background: #DEAA9C;
+}
+.wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header {
+	background: #E36363;
+	box-shadow: 0 0 10px #000000;
+	height: 134px;
+}
+.logo {
+	float: left;
+	margin-right: 250px;
+	margin-top: 7px;
+}
+.paragraph_h {
+	font-family: Calibri;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 32px;
+	float: left;
+	margin-right: 40px;
+}
+main {
+	clear: both;
+	background: #DEAA9C;
+}
+.text {
+	font-family: "Inknut Antiqua", serif;
+	font-size: 26px;
+	margin-left: 300px;
+	width: 800px;
+	line-height: 35px;
+}
+h1 {
+	font-size: 64px;
+	font-family: Arial;
+	color: white;
+	text-align: center;
+	text-shadow: none;
+	-webkit-text-stroke: 3px #B42424;
+}
+article {
+	width: 408px;
+	height: 356px;
+	background: #E59898;
+	border: 1px solid black;
+	float: left;
+	margin: 0 3px 30px 3px;
+	padding-left: 10px;
+}
+h2 {
+	font-family: Arial;
+}
+.article_paragraph {
+	font-size:20px;
+	font-family: Arial;
+}
+.button {
+	text-align: center;
+	width: 191px;
+	height: 60px;
+	font-size: 20px;
+	background: #AB3333;
+	border: 0 solid transparent;
+	border-radius: 10px;
+	margin-top: 80px;
+	margin-left: 100px;
+	color: white;
+	text-shadow: -1px -1px 0 black,
+				  1px -1px 0 black,
+				 -1px 1px 0 black,
+				 1px 1px 0 black;
+}
+.button_3 {
+	text-align: center;
+	width: 191px;
+	height: 60px;
+	font-size: 20px;
+	background: #AB3333;
+	border: 0 solid transparent;
+	border-radius: 10px;
+	margin-top: 107px;
+	margin-left: 100px;
+	color: white;
+	text-shadow: -1px -1px 0 black,
+				  1px -1px 0 black,
+				 -1px 1px 0 black,
+				 1px 1px 0 black;
+}
+.pictures {
+	background: #AB3333;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	width: 408px;
+	height: 520px;
+}
+.picture_5 {
+	background: #AB3333;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	width: 408px;
+	height: 380px;
+}
+h4 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+img {
+	float: left;
+	margin-left: 9px;
+	margin-bottom: 15px;
+}
+.margin {
+	margin-left: 5px;
+}
+footer {
+	border: 1px solid black;
+}
+.paragraph_f {
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	background: #E59898;
+	border: 1px solid black;
+	text-align: center;
+	width: 408px;
+	height: 77px;
+	margin: 50px 3px 50px 3px;
+	padding-left: 10px;
+}
