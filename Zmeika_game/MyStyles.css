@@ -5,26 +5,35 @@
     width: 150px;
     padding: 15px;
     color: white;
-    background-color: green;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(5, 112, 116);
     text-align: center;
     cursor: pointer;
     float: left;
     margin-right: 10px;
+    border-radius: 20px;
 }
 .game-table {
     border-collapse: collapse;
-    background-color: #3e3e3e;
+    background-color: #9eba85;
+    border-radius: 10px;
 }
 td.game-table-cell {
     width: 15px;
     height: 15px;
-    border: 1px dotted #eee;
+    /*border: 1px dotted #eee;*/
 }
 .snake-unit {
-    background-color: white;
+    background-color: rgb(57, 66, 15);
+    border-radius: 7px;
+}
+.snake-head {
+    background-color: rgb(116, 8, 8)!important;
 }
 .food-unit {
-    background-color: red;
+    background-color: rgb(57, 66, 15);
+    border-radius: 7px;
 }
 .buttons {
     display: inline-block;

@@ -1,7 +1,7 @@
 // Глобальные переменные:
 var FIELD_SIZE_X = 20;// строки
 var FIELD_SIZE_Y = 20;//столбцы
-var SNAKE_SPEED = 300;// Интервал между перемещениями змейки
+var SNAKE_SPEED = 800;// Интервал между перемещениями змейки
 var snake = [];// Сама змейка
 var direction = 'y+';// Направление движения змейки
 var gameIsRunning = false;// Запущена ли игра
@@ -56,7 +56,7 @@ function startGame() {
     respawn();// создали змейку
 
     snake_timer = setInterval(move, SNAKE_SPEED);
-    setTimeout(createFood, 5000);
+    setTimeout(createFood, 500);
 }
 
 /**
@@ -73,6 +73,11 @@ function respawn() {
     // Голова змейки
     var snake_head = document.getElementsByClassName('cell-' + start_coord_y + '-' + start_coord_x)[0];
     snake_head.setAttribute('class', snake_head.getAttribute('class') + ' snake-unit');
+
+    // Голова змейки
+    var snake_head_color = document.getElementsByClassName('cell-' + start_coord_y + '-' + start_coord_x)[0];
+    snake_head_color.setAttribute('class', snake_head_color.getAttribute('class') + ' snake-unit snake-head');
+
     // Тело змейки
     var snake_tail = document.getElementsByClassName('cell-' + (start_coord_y - 1) + '-' + start_coord_x)[0];
     snake_tail.setAttribute('class', snake_tail.getAttribute('class') + ' snake-unit');
@@ -112,8 +117,11 @@ function move() {
     // 2) Змейка не ушла за границу поля
     // console.Log(new_unit);
     if (!isSnakeUnit(new_unit) && new_unit !== undefined) {
+        // Снять snake-head у старой головы
+        snake[snake.length - 1].classList.remove('snake-head');
+
         //Добавление новой части змейки
-        new_unit.setAttribute('class', new_unit.getAttribute('class') + ' snake-unit');
+        new_unit.setAttribute('class', new_unit.getAttribute('class') + ' snake-unit snake-head');
         snake.push(new_unit);
 
         // Проверяем, надо ли убрать хвост
@@ -128,6 +136,14 @@ function move() {
     } 
     else {
         finishTheGame();
+    }
+}
+// функция ускорения змейки
+function speedUpSnake() {
+   if (SNAKE_SPEED > 100) { // Минимальная скорость
+        SNAKE_SPEED -= 50;    // Уменьшаем интервал (ускоряем)
+        clearInterval(snake_timer);
+        snake_timer = setInterval(move, SNAKE_SPEED);
     }
 }
 /**
@@ -159,6 +175,7 @@ function haveFood(unit) {
         createFood();
 
         score++;
+        speedUpSnake(); // ускоряем змейку после еды
     }
     return check;
 }
