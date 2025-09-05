@@ -1,7 +1,7 @@
 // Глобальные переменные:
-var FIELD_SIZE_X = 20;// строки
-var FIELD_SIZE_Y = 20;//столбцы
-var SNAKE_SPEED = 800;// Интервал между перемещениями змейки
+var FIELD_SIZE_X = 60;// строки
+var FIELD_SIZE_Y = 60;//столбцы
+var SNAKE_SPEED = 400;// Интервал между перемещениями змейки
 var snake = [];// Сама змейка
 var direction = 'y+';// Направление движения змейки
 var gameIsRunning = false;// Запущена ли игра
@@ -14,7 +14,7 @@ function init() {
 
     var wrap = document.getElementsByClassName('wrap')[0];
 
-    wrap.style.width = '400px';
+    wrap.style.width = '1000px';
     // События кнопок Старт и Новая игра
     document.getElementById('snake-start').addEventListener('click', startGame);
     document.getElementById('snake-renew').addEventListener('click', refreshGame);
