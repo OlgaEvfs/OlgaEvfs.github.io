@@ -2,6 +2,7 @@ html {
     font-size: 10px;
     background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
     background-size: cover;
+    background-color: rgb(144, 176, 165);
 }
 body, html {
     margin: 0;
@@ -28,6 +29,7 @@ body, html {
     color: white;
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 .5rem black;
+    box-shadow: 0 0 2rem rgb(7, 20, 212);
 }
 .playing {
     transform: scale(1.1);
