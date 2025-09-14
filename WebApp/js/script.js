@@ -216,7 +216,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const forms = document.querySelectorAll('form');
     const message = {
         loading: 'img/form/spinner.svg',
-        succes: 'Спасибо! Скоро мы с вами свяжемся',
+        success: 'Спасибо! Скоро мы с вами свяжемся',
         failure: 'Что-то пошло не так...'
     };
 
@@ -274,6 +274,12 @@ window.addEventListener('DOMContentLoaded', function() {
                 <div class="modal__title">${message}</div>
             </div>
         `;
-        document
+        document.querySelector('.modal').append(thanksModal);
+        setTimeout(() => {
+            thanksModal.remove();
+            prevModalDialog.classList.add('show');
+            prevModalDialog.classList.remove('hide');
+            closeModal();
+        }, 4000);
     }
 });
