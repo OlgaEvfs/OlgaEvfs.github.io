@@ -1,5 +1,16 @@
-window.addEventListener('DOMContentLoaded', function() {
+import tabs from './modules/tabs';
+import modal from './modules/modal';
+import timer from './modules/timer';
+import cards from './modules/cards';
+import calc from './modules/calc';
+import forms from './modules/forms';
+import slider from './modules/slider';
+import {openModal} from './modules/modal';
 
+window.addEventListener('DOMContentLoaded', function() {
+    const modalTimeId = setTimeout(() => openModal('.modal', modalTimerId), 50000);
+
+    tabs('.tabheader__item', '')
     // Tabs
 
     let tabs = document.querySelectorAll('.tabheader__item'),
@@ -189,37 +200,6 @@ window.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-    //new MenuCard(
-        //"img/tabs/vegy.jpg",
-        //"vegy",
-        //"Меню 'Фитнес'",
-        //'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов.' +
-        //' Продукт активных и здоровых людей. это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
-       // 9,
-       // ".menu .container"
-    //).render();
-
-    //new MenuCard(
-        //"img/tabs/post.jpg",
-        //"post",
-        //'Меню "Постное"',
-        //'Меню "Постное" - это тщательный подбор ингридиентов: полное отсутствие продуктов животного происхождения,'+
-        //' молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных '+
-       // 'вегетарианских стейков.',
-        //14,
-       // ".menu .container"
-    //).render();
-
-   // new MenuCard(
-        //"img/tabs/elite.jpg",
-        //"elite",
-        //'Меню "премиум"',
-        //'В меню "Премиум" мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. '+
-        //' Красная рыба, морепродукты, фрукты - ресторанное меню без подхода в ресторан!',
-       // 21,
-       // ".menu .container"
-    //).render();
-
     // Forms
 
     const forms = document.querySelectorAll('form');
@@ -233,8 +213,8 @@ window.addEventListener('DOMContentLoaded', function() {
         bindPostData(item);
     });
 
-    const postData = async (URL, data) => {
-        let res = await this.fetch(URL, {
+    const postData = async (url, data) => {
+        let res = await fetch(url, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -319,14 +299,14 @@ window.addEventListener('DOMContentLoaded', function() {
         total = document.querySelector('#total'),
         current = document.querySelector('#current'),
         slidesWrapper = document.querySelector('.offer__slider-wrapper'),
-        width = window.getComputedStyle(slidesWrapper).width;
+        width = window.getComputedStyle(slidesWrapper).width,
         slidesField = document.querySelector('.offer__slider-inner');
 
     if (slides.length < 10) {
         total.textContent = `0${slides.length}`;
         current.textContent = `0${slideIndex}`;
     } else {
-        total.textContent = slides.length
+        total.textContent = slides.length;
         current.textContent = slideIndex;
     }
 
@@ -342,7 +322,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     slider.style.position = 'relative';
 
-    const indicators = this.document.createElement('ol'),
+    const indicators = document.createElement('ol'),
         dots = [];
     indicators.classList.add('carousel-indicators');
     indicators.style.cssText =`
@@ -416,7 +396,7 @@ window.addEventListener('DOMContentLoaded', function() {
             offset -= deleteNotDigits(width);
         }
 
-        slidesField.style.transform = `transleteX(-${offset}px)`;
+        slidesField.style.transform = `translateX(-${offset}px)`;
 
         if (slideIndex == 1) {
             slideIndex = slides.length;
@@ -460,7 +440,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     //Calculator
 
-    const result = document.querySelector('.calculator__result span');
+    const result = document.querySelector('.calculating__result span');
 
     let sex, height, weight, age, ratio;
 
