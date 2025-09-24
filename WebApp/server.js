@@ -1,6 +1,6 @@
 
 const express = require('express');
-const mongoose = require(mongoose);
+const mongoose = require('mongoose');
 const cors = require('cors');
 const fs = require('fs');
 
@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const mongoURL = 'mongodb+srv://Olga_Evfs_db:<admin123456789>@cluster0.lufqfjc.mongodb.net/db?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURL = 'mongodb+srv://Olga_Evfs_db:admin123456789@cluster0.lufqfjc.mongodb.net/db?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(mongoURL)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
@@ -54,7 +54,7 @@ const seedDatabase = async () => {
 const Request = mongoose.model('Request', requestSchema);
 
 // API Routes
-app.post('/requests', async (req, res) => {
+app.post('/api/requests', async (req, res) => {
     try {
         const newRequest = new Request(req.body);
         await newRequest.save();
@@ -64,7 +64,7 @@ app.post('/requests', async (req, res) => {
     }
 });
 
-app.get('/menu', async (req, res) => {
+app.get('/api/menu', async (req, res) => {
     try {
         const menuItems = await MenuItem.find();
         res.json(menuItems);

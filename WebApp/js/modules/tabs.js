@@ -30,7 +30,7 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
             tabs.forEach((item, i) => {
                 if (target == item) {
                     hideTabContent();
-                    showTabContent(i)
+                    showTabContent(i);
                 }
             });
         }
