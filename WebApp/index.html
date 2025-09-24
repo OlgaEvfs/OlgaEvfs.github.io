@@ -18,6 +18,9 @@
             </nav>
         </div>
         <div class="header__right-block">
+            <div id="auth-links">
+                <a href="/login.html" class="header__link">Войти</a>
+            </div>
             <button class="btn btn_white" data-modal>Связаться с нами</button>
         </div>
     </header>
@@ -274,5 +277,22 @@
         </div>
     </div>
     <script src="js/bundle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/session-status');
+                const data = await response.json();
+
+                const authLinks = document.getElementById('auth-links');
+                if (data.loggedIn) {
+                    authLinks.innerHTML = '<a href="/admin" class="header__link">Админ-панель</a>';
+                } else {
+                    authLinks.innerHTML = '<a href="/login.html" class="header__link">Войти</a>';
+                }
+            } catch (error) {
+                console.error('Error checking session status:', error);
+            }
+        });
+    </script>
 </body>
 </html>
