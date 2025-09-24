@@ -41,7 +41,40 @@ const seedDatabase = async () => {
             console.log('No data found in menu collection. Seeding database...');
             const data = fs.readFileSync('db.json', 'utf-8');
             const json = JSON.parse(data);
-            await
+            await MenuItem.insertMany(json.menu);
+            console.log('Database seeded successfully.');
+        } else {
+            console.log('Menu collection already contains data. Skipping seed.');
         }
+    } catch (error) {
+        console.error('Error seeding database:', error);
     }
-}
+};
+
+const Request = mongoose.model('Request', requestSchema);
+
+// API Routes
+app.post('/requests', async (req, res) => {
+    try {
+        const newRequest = new Request(req.body);
+        await newRequest.save();
+        res.status(201).json(newRequest);
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+});
+
+app.get('/menu', async (req, res) => {
+    try {
+        const menuItems = await MenuItem.find();
+        res.json(menuItems);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+// Start the server and seed database
+app.listen(port, () => {
+    console.log(`Server is running on port: ${port}`);
+    seedDatabase();
+});
