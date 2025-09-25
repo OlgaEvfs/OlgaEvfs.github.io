@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoutBtn = document.getElementById('logout-btn');
     const menuItemsContainer = document.querySelector('#menu-items-container');
     const editItemIdInput = document.getElementById('edit-item-id');
-    const addBtn = document.getElementById(add-btn);
+    const addBtn = document.getElementById('add-btn');
     const updateBtn = document.getElementById('update-btn');
 
     const fetchMenuItems = async () => {
@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderMenuItems = (menuItems) => {
         menuItemsContainer.innerHTML = '';
-        menuItems.foreach(item => {
+        menuItems.forEach(item => {
             const menuItemElement = document.createElement('div');
             menuItemElement.classList.add('menu__item');
             menuItemElement.innerHTML = `
-                <img src="../${item.img}" alt="${item.alting}">
-                <div class="menu__item-content>
+                <img src="../${item.img}" alt="${item.altimg}">
+                <div class="menu__item-content">
                     <h3 class="menu__item-subtitle">${item.title}</h3>
                     <div class="menu__item-descr">${item.descr}</div>
                     <div class="menu__item-price">
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const itemId = e.target.dataset.id;
             const response = await fetch('/menu');
             const menuItems = await response.json();
-            const selectedItem = menuItems.find(item => item.id === itemId);
+            const selectedItem = menuItems.find(item => item._id === itemId);
 
             if (selectedItem) {
                 document.getElementById('img').value = selectedItem.img;

@@ -36,7 +36,7 @@ mongoose.connect(mongoURL)
 // Mongoose Schema and Model
 const menuSchema = new mongoose.Schema({
     img: String,
-    alting: String,
+    altimg: String,
     title: String,
     descr: String,
     price: Number
@@ -98,7 +98,7 @@ app.post('/logout', (req, res) => {
 // Маршрут для проверки статуса сеанса
 app.get('/session-status', (req, res) => {
     if (req.session.user) {
-        res.status(200).json({ loggetIn: true });
+        res.status(200).json({ loggedIn: true });
     } else {
         res.status(200).json({ loggedIn: false });
     }
