@@ -1,0 +1,13 @@
+{
+    "name": "ts-kanban-todo",
+    "version": "1.0.0",
+    "description": "Simple Kanban-style TODO board in TypeScript with localStorage.",
+    "scripts": {
+        "build": "tsc -p .",
+        "clean": "powershell -NoProfile -Command \"if (Test-Path dist) { Remove-Item -Recurse -Force dist }\"",
+        "dev": "npm run build -- --watch"
+    },
+    "devDependencies": {
+        "typescript": "5.6.3"
+    }
+}
