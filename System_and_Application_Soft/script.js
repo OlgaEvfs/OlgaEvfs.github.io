@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <div class="card-face card-front">
                     ${item.name}
-                    <button class="markBtn">Изучено</button>
+                    <button class="markBtn">Learned</button>
                 </div>
                 <div class="card-face card-back"><h3>${item.type}</h3></div>
             `;
