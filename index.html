@@ -3,69 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио!</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+	<meta name="description" content="Portfolio showcasing my journey from HTML to fullstack applications and UI prototypes."> 
+    <title>Olga Evstafieva - Portfolio</title>
+
+	<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+  	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<!-- Styles -->
+	 <link rel="stylesheet" href="styles.css">
+
+	<!-- Script -->
+	<script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-     	Я начинающий, но способный разработчик ПО!   
-    </header> 
-    <div class="container">
-    	Мои работы <span class="note">(все изображения и тексты созданы исключительно для учебных демонстраций)</span> 
-    	<div class="my_projects">
-    		<h4>Сайты на чистом HTML/CSS</h4>
-    		<br>
-			<a href="text/index.html">Текст</a>
-			<br>
-			<a href="Tables/Evfs_tabel1.html">Таблицы</a>
-			<br>
-			<a href="format/format.html">Форматирование</a>
-			<br>
-			<a href="kontrol/Evstafieva.html">ПО</a>
-			<br>
-			<a href="Evstafieva_links/Эстония/index.html">Ссылки</a>
-			<br>
-			<a href="Evstafieva_riigid/index.html">Регионы(с таблицей)</a>
-			<br>
-			<a href="Evstafieva_riigid_osa_2/index.html">Регионы(без таблицы)</a>
-			<br>
-			<a href="Positioning/index.html">Позиционирование</a>
-			<br>
-			<a href="Semantic_Evstafieva/index.html">Семантика</a>
-			<br>
-			<a href="Web_App/index.html">Веб-приложение</a>
-			<br>
-			<a href="Evstafieva_forms/index.html">Формы</a>
-			<br>
-			<a href="CSS3_effects/index.html">Стили</a>
-			<br>
-			<a href="web_disain/Evstafieva_Art_School/index.html">Арт-школа</a>
-			<br>
-			<a href="Landing_page/index.html">Landing page</a>
-			</a>
-    		<a href="Zmeika_game/index.html">game Snake</a>
-			<br>
-    		<a href="Drum_app/index.html">Drum app</a>
-			<br>
-			<a href="https://github.com/OlgaEvfs/GraphQL_Films.git">GraphQL_Films</a>
-			<br>
-			<a href="https://github.com/OlgaEvfs/ClothingStore.git">ClothingStore(Rest API)</a>
-			<br>
-			<a href="TS_Todo/index.html">Todo App</a>
-			<br>
-			<a href="https://www.figma.com/design/UpZODBAycUqf9D1cU5KNTv/icon?node-id=0-1&t=ratWtoV9eR6H8Td8-1">Пример создания иконок в Figma</a>
-			<br>
-			<a href="https://github.com/OlgaEvfs/Chat-projekt.git">Chat-project</a>
-			<br>
-			<a href="System_and_Application_Soft/index.html">System and Application Soft</a>
-    	</div>
-    </div> 
-    <footer>
-    	Готова к сотрудничеству!
-	OlgaEvfs:<a href="#">olga.evstafieva@ivkhk.ee</a>
 
-    </footer>
+	<!-- HERO -->
+	<section class="hero">
+		<div class="hero-overlay"></div>
+
+		<div class="hero-content">
+			<p class="hero-role">
+				Junior Fullstack Developer
+				<span class="lang-secondary">
+					Младший fullstack-разработчик
+				</span>
+			</p>
+
+			<h1 class="hero-name">Olga Evstafieva</h1>
+
+			<p class="hero-tagline">
+				From first HTML pages to fullstack applications
+				<span class="lang-secondary">
+					От первых HTML-страниц до fullstack-приложений
+				</span>
+			</p>
+
+			<a href="#journey" class="hero-cta">View Projects ↓</a>
+		</div>
+
+		<!-- small foto -->
+		<div class="hero-avatar">
+			<img src="img/me.jpg" alt="Olga portrait">
+		</div>
+	</section>
+
+	<!-- INTRO -->
+	<section class="intro">
+		<p class="intro-text">
+			    This portfolio reflects my learning journey - from simple HTML pages to fullstack applications. 
+    			It showcases my growth as a developer and my interest in building clean, structured, and interactive web experiences.
+				Inspired by the place where it all began.
+			<span class="lang-secondary">
+				Это портфолио отражает мой путь обучения - от простых HTML-страниц до fullstack-приложений.
+				Оно демонстрирует мой рост как разработчика и мой интерес к созданию чистых, структурированных и интерактивных веб-решений.
+				Вдохновлено местом, где всё началось.
+			</span>
+		</p>
+	</section>
+
+	<!-- JOURNEY -->
+	<section class="journey" id="journey">
+		<div class="journey-inner">
+			<h2 class="section-title">Learning Journey</h2>
+
+			<!-- FIGMA -->
+			<div class="stage">
+				<h3 class="stage-title">UI & Prototyping · Figma</h3>
+
+				<p class="stage-desc">
+					From wireframes to high-fidelity interactive prototypes
+					<span class="lang-secondary">
+					От вайрфреймов до интерактивных high-fidelity прототипов
+					</span>
+				</p>
+
+				<div class="projects-grid">
+
+					<article class="project-card">
+						<h4>App Interface Concept</h4>
+						<p class="project-tech">Wireframes · UI Components · Interactive Prototype</p>
+						<div class="project-links">
+							<a href="https://www.figma.com/design/FvfWu4jZlA2rqwlCzJqtDZ/Project?node-id=137-1165&t=5PIC9QNev9zovUcr-1" target="_blank">View Project ↗</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<h4>Custom Icon Set</h4>
+						<p class="project-tech">Vector Icons · Scalable Components · UI System</p>
+						<div class="project-links">
+							<a href="https://www.figma.com/design/UpZODBAycUqf9D1cU5KNTv/icon?node-id=0-1&t=ratWtoV9eR6H8Td8-1" target="_blank">View Project ↗</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<h4>E-commerce Landing Page Concept</h4>
+						<p class="project-tech">Responsive Layout · UX Structure · High-fidelity Design</p>
+						<div class="project-links">
+							<a href="https://www.figma.com/design/qpM61tc55NJ5t1pO20UgEZ/LendingPage?node-id=0-1&t=RFIqDDUMvTMioK41-1" target="_blank">View Project ↗</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4>Art School Landing Page</h4>
+						<p class="project-tech">Branding Concept · Layout Design · Visual Identity</p>
+						<div class="project-links">
+							<a href="https://www.figma.com/design/lSBF9mT0VPyrtrTEc2YxWi/Evstafieva_Art_School--Copy-?node-id=0-1&t=2EWwThEsny7kjPmv-1" target="_blank">View Project ↗</a>
+						</div>
+					</article>
+
+				</div>
+				<button class="view-more-btn">View more</button>
+			</div>
+
+			<!-- Stage 1 -->
+			<div class="stage">
+				<h3 class="stage-title">
+					Stage 1 · HTML & CSS Foundations
+				</h3>
+
+				<p class="stage-desc">
+					Layout, tables, forms, semantics
+					<span class="lang-secondary">
+						Верстка, таблицы, формы, семантика
+					</span>
+				</p>
+
+				<div class="projects-grid">
+
+					<article class="project-card">
+						<h4 class="project-title">Text</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="text/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<h4 class="project-title">Tables</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Tables/Evfs_tabel1.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<h4 class="project-title">Formatting</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="format/format.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Software</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="kontrol/Evstafieva.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Links</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Evstafieva_links/Эстония/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Links 2</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Evstafieva_riigid_osa_2/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Semantic</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Semantic_Evstafieva/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Web App</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Web_App/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Forms</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Evstafieva_forms/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Styles</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="CSS3_effects/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Web Design</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="web_disain/Evstafieva_Art_School/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">Landing Page</h4>
+						<p class="project-tech">HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Landing_page/index.html" target="_blank" class="project-link">
+								Live demo →
+							</a>
+						</div>
+					</article>
+
+				</div>
+				<button class="view-more-btn">View more</button>
+			</div>
+
+			<!-- Stage 2 -->
+			<div class="stage">
+
+				<h3 class="stage-title">
+					Stage 2 · JavaScript & Interactivity
+				</h3>
+
+				<p class="stage-desc">
+					DOM manipulation, events, simple applications
+					<span class="lang-secondary">
+					Работа с DOM, события, простые приложения
+					</span>
+				</p>
+
+				<div class="projects-grid">
+
+					<article class="project-card">
+						<h4 class="project-title">Snake Game</h4>
+						<p class="project-tech">JavaScript · HTML · CSS</p>
+
+						<div class="project-links">
+							<a href="Zmeika_game/index.html" target="_blank" class="project-link">
+							Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<h4 class="project-title">Drum App</h4>
+						<p class="project-tech">JavaScript · DOM Events</p>
+
+						<div class="project-links">
+							<a href="Drum_app/index.html" target="_blank" class="project-link">
+							Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<h4 class="project-title">Todo App</h4>
+						<p class="project-tech">JavaScript · TypeScript</p>
+
+						<div class="project-links">
+							<a href="TS_Todo/index.html" target="_blank" class="project-link">
+							Live demo →
+							</a>
+						</div>
+					</article>
+
+					<article class="project-card hidden">
+						<h4 class="project-title">System and Application Soft</h4>
+						<p class="project-tech">JavaScript · DOM Events</p>
+
+						<div class="project-links">
+							<a href="System_and_Application_Soft/index.html" target="_blank" class="project-link">
+							Live demo →
+							</a>
+						</div>
+					</article>
+				</div>
+				<button class="view-more-btn">View more</button>
+			</div>
+
+			<!-- Stage 3 -->
+			<div class="stage">
+
+				<h3 class="stage-title">
+					Stage 3 · Backend & Fullstack
+				</h3>
+
+				<p class="stage-desc">
+					Server-side logic, APIs, databases
+					<span class="lang-secondary">
+					Серверная логика, API, работа с данными
+					</span>
+				</p>
+
+				<div class="projects-grid">
+
+					<article class="project-card">
+					<h4 class="project-title">Clothing Store API</h4>
+					<p class="project-tech">Node.js · REST API</p>
+
+					<div class="project-links">
+						<a
+						href="https://github.com/OlgaEvfs/ClothingStore.git"
+						target="_blank"
+						class="project-link"
+						>
+						View on GitHub ↗
+						</a>
+					</div>
+					</article>
+
+					<article class="project-card">
+					<h4 class="project-title">GraphQL Films</h4>
+					<p class="project-tech">GraphQL · Backend</p>
+
+					<div class="project-links">
+						<a
+						href="https://github.com/OlgaEvfs/GraphQL_Films.git"
+						target="_blank"
+						class="project-link"
+						>
+						View on GitHub ↗
+						</a>
+					</div>
+					</article>
+
+					<article class="project-card">
+					<h4 class="project-title">Chat Project</h4>
+					<p class="project-tech">Fullstack · Client / Server</p>
+
+					<div class="project-links">
+						<a
+						href="https://github.com/OlgaEvfs/Chat-projekt.git"
+						target="_blank"
+						class="project-link"
+						>
+						View on GitHub ↗
+						</a>
+					</div>
+					</article>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- DIPLOMA PROJECT -->
+	<section class="future">
+
+		<h2 class="section-title">
+			Stage 4 · Final Project
+		</h2>
+
+		<div class="project-card placeholder">
+			<h4>Diploma Fullstack Application</h4>
+			<p>
+				Final fullstack project developed as part of my studies
+				<span class="lang-secondary">
+					Итоговый fullstack-проект, выполненный в рамках обучения
+				</span>
+			</p>
+			<span class="coming-soon">
+				In development
+			</span>
+		</div>
+	</section>
+
+	<!-- CONTACT -->
+    <footer class="contact">
+		<p class="contact-title">
+			Open to collaboration
+			<span class="lang-secondary">Открыта к сотрудничеству</span>
+		</p>
+
+		<a href="mailto:olga.evstafieva_dev@outlook.com" class="contact-email">
+			olga.evstafieva_dev@outlook.com
+		</a>
+
+		<p class="disclaimer">
+			All images and texts are created for educational demonstration purposes only.
+			<span class="lang-secondary">
+			Все изображения и тексты созданы исключительно для учебных демонстраций.
+			</span>
+		</p>
+	</footer>
+
+	<button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
 </body>
 </html>

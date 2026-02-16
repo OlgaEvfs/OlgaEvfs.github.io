@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Diagnostics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo.svg" alt="Logotype">
+            </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Diagnostics</a>
+                <a href="#" class="header__link">Services</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <div id="auth-links">
+                <a href="/login.html" class="header__link">Log in</a>
+            </div>
+            <button class="btn btn_white" data-modal>Contact us</button>
+        </div>
+    </header>
+    <div class="sidepanel">
+        <div class="sidepanel__text"><span>Social network</span></div>
+        <div class="sidepanel__divider"></div>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/facebook.svg" alt="facebook">
+        </a>
+    </div>
+
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="img/tabs/vegy.jpg" alt="Computer Diagnostics">
+                    <div class="tabcontent__descr">
+                        Computer diagnostics to quickly identify engine issues and error codes.
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/elite.jpg" alt="Engine Check">
+                    <div class="tabcontent__descr">
+                        Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!                                     
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/post.jpg" alt="Brake System">
+                    <div class="tabcontent__descr">
+                        Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!                                     
+                    </div>
+                </div>
+                <div class="tabcontent">
+                    <img src="img/tabs/hamburger.jpg" alt="Full Vehicle Check">
+                    <div class="tabcontent__descr">
+                        Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+                    </div>
+                </div>
+                <div class="tabheader">
+                    <h3>Сhoose the appropriate service</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">Computer Diagnostics</div>
+                        <div class="tabheader__item">Engine Check</div>
+                        <div class="tabheader__item">Brake System</div>
+                        <div class="tabheader__item">Full Vehicle Check</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Don't think about mistakes - we will find them!</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="offer">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="offer__text">
+                <h2 class="title">What We Offer</h2>
+                <div class="offer__descr">
+                    We provide professional car diagnostics using the latest equipment and experienced technicians.
+                </div>
+            </div>
+            <div class="offer__action">
+                <button class="btn btn_dark" data-modal>Contact us</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer__advantages">
+                <h2>Fast and Accurate</h2>
+                <div class="offer__advantages-text">
+                    Modern scanners help us detect faults quickly and precisely.
+                </div>
+                <h2>Experienced Technicians</h2>
+                <div class="offer__advantages-text">
+                    Our experts understand every detail of vehicle diagnostics and repairs.
+                </div>
+            </div>
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev">
+                        <img src="icons/left.svg" alt="prev">
+                    </div>
+                    <span id="current">03</span>
+                    /
+                    <span id="total">04</span>
+                    <div class="offer__slider-next">
+                        <img src="icons/right.svg" alt="next">
+                    </div>
+                </div>
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slider-inner">
+                        <div class="offer__slide">
+                            <img src="img/slider/pepper.jpg" alt="pepper">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/food-12.jpg" alt="food">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/olive-oil.jpg" alt="oil">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/paprika.jpg" alt="paprika">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="calculating">
+        <div class="container">
+            <h2 class="title">Рассчитаем вашу потребность в калориях?
+            </h2>
+            <div class="calculating__field">
+                <div class="calculating__subtitle">
+                    Ваш пол
+                </div>
+                <div class="calculating__choose" id="gender">
+                    <div id="female" class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                    <div id="male" class="calculating__choose-item">Мужчина</div>
+                </div>
+
+                <div class="calculating__subtitle">
+                    Ваша конституция
+                </div>
+                <div class="calculating__choose calculating__choose_medium">
+                    <input type="text" id="height" placeholder="Введите рост" class="calculating__choose-item">
+                    <input type="text" id="weight" placeholder="Введите вес"  class="calculating__choose-item">
+                    <input type="text" id="age" placeholder="Введите возраст" class="calculating__choose-item">
+                </div>
+
+                <div class="calculating__subtitle">
+                    Выберите вашу физическая активность
+                </div>
+                <div class="calculating__choose calculating__choose_big">
+                    <div data-ratio="1.2" id="low" class="calculating__choose-item">Низкая активность </div>
+                    <div data-ratio="1.375" id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
+                    <div data-ratio="1.55" id="medium" class="calculating__choose-item">Умеренная активность</div>
+                    <div data-ratio="1.725" id="high" class="calculating__choose-item">Высокая активность</div>
+                </div>
+
+                <div class="calculating__divider"></div>
+
+                <div class="calculating__total">
+                    <div class="calculating__subtitle">
+                        Ваша суточная норма калорий:
+                    </div>
+                    <div class="calculating__result">
+                        <span>2700</span> ккал
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu">
+        <h2 class="title">Popular services</h2>
+
+        <div class="menu__field">
+            <div class="container">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="container">
+            <div class="title">Book Your Diagnostics Appointment Now!</div>
+            <form action="#" class="order__form">
+                <input required placeholder="Your Name" name="name" type="text" class="order__input">
+                <input required placeholder="Your Phone Number" name="phone" type="phone" class="order__input">
+                <img src="icons/right.svg" alt="right">
+                <button class="btn btn_dark btn_min">Call Me Back</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title">Special Offer for New Clients!</div>
+                <div class="promotion__descr">
+                    Get <span>20%!</span> off your first car diagnostics.
+                    <br><br>
+                    Offer valid until May 20th at midnight.
+                </div>
+            </div>
+            <div class="promotion__timer">
+                <div class="title">Time left until the end of the promotion:</div>
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        days
+                    </div>
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        hours
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        minutes
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">We are on social networks:</div>
+                <a href="#" class="link">instagram</a>
+                <a href="#" class="link">facebook</a>
+            </div>
+            <div class="pepper">
+                <img src="icons/veg.svg" alt="pepper">
+            </div>
+            <div class="call">
+                <div class="subtitle">Or call us</div>
+                <a href="#" class="link">+372555666</a>
+                <a href="#" class="link">+372555667</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">We will contact you as soon as possible!</div>
+                    <input required placeholder="Your Name" name="name" type="text" class="modal__input">
+                    <input required placeholder="Your Phone Number" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Call me back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/bundle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/session-status');
+                const data = await response.json();
+
+                const authLinks = document.getElementById('auth-links');
+                if (data.loggedIn) {
+                    authLinks.innerHTML = '<a href="/admin" class="header__link">Admin panel</a>';
+                } else {
+                    authLinks.innerHTML = '<a href="/login.html" class="header__link">Login</a>';
+                }
+            } catch (error) {
+                console.error('Error checking session status:', error);
+            }
+        });
+    </script>
+</body>
+</html>
