@@ -5,7 +5,7 @@ html {
 /* --- HERO --- */
 .hero {
   position: relative;
-  height: 100vh; /* занимает весь экран */
+  min-height: 100vh; /* занимает весь экран */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,5 +460,15 @@ html {
   transform: translateY(0);
 }
 
-
+/* MEDIA */
+@media (max-width: 768px) {
+  .hero-avatar {
+    position: static;
+    margin: 24px auto 0;
+    width: 80px;
+    height: 80px;
+    bottom: auto;
+    right: auto;
+  }
+}
 
