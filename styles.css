@@ -462,11 +462,17 @@ html {
 
 /* MEDIA */
 @media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .hero-avatar {
     position: static;
-    margin: 24px auto 0;
-    width: 80px;
-    height: 80px;
+    margin-top: 24px;
+    width: 88px;
+    height: 88px;
     bottom: auto;
     right: auto;
   }
