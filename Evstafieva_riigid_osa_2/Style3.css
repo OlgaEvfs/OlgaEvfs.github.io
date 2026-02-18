@@ -4,27 +4,29 @@ body {
 h1 {
 	font-family: Courier New;
 	text-align: center;
-	font-size: 50pt;
+	font-size: 50px;
 	color: darkgreen;
 }
 h2 {
 	font-family: Courier New;
 	font-style: italic;
 	color: darkgreen;
-	width: 1280px;
+	max-width: 1280px;
+	width: 90%;
 	margin: 0 auto;
-	line-height: 2cm;
+	line-height: 1.5em;
 }
 p {
 	font-family: Courier New;
 	font-weight: bold;
 	text-align: justify;
 	text-indent: 1cm;
-	width: 1280px;
+	max-width: 1280px;
+	width: 90%;
 	margin: 0 auto;
 }
 img {
 	border: 5px solid darkgreen;
-	margin-top: 1cm;
-	margin-bottom: 1cm;
+	margin: 1cm auto;
+	display: block;
 }

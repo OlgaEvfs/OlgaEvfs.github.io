@@ -1,5 +1,6 @@
 .wrapper {
-	width: 1380px;
+	max-width: 1380px;
+	width: 100%;
 	margin: 0 auto;
 }
 header {
@@ -162,4 +163,3 @@ footer {
 	font-family: Arial;
 	padding-top: 30px;
 }
-

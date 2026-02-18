@@ -2,7 +2,8 @@ body {
 	background: #FFE5CA;
 }
 .wrapper {
-	width: 1380px;
+	max-width: 1380px;
+	width: 100%;
 	margin: 0 auto;
 }
 header {
@@ -53,6 +54,8 @@ main {
 	text-align: justify;
 }
 img {
+	max-width: 100%;
+	height: auto;
 	margin-bottom: 15px;
 	margin-top: 15px;
 	position: relative;

@@ -4,27 +4,31 @@ body {
 h1 {
 	font-family: arial;
 	text-align: center;
-	font-size: 50pt;
+	font-size: 50px;
 	color: darkblue;
 }
 h2 {
 	font-family: arial;
 	font-style: italic;
 	color: darkblue;
-	width: 1280px;
+	max-width: 1280px;
+	width: 90%;
 	margin: 0 auto;
-	line-height: 2cm;
+	line-height: 1.6;
 }
 p {
 	font-family: arial;
 	font-weight: bold;
-	width: 1280px;
+	max-width: 1280px;
+	width: 90%;
 	margin: 0 auto;
 	text-align: justify;
 	text-indent: 1cm;
 }
 img {
 	border: 5px solid darkblue;
-	margin-top: 1cm;
-	margin-bottom: 1cm;
+	margin: 1cm auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }

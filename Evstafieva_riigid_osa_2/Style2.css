@@ -4,32 +4,37 @@ body {
 h1 {
 	font-family: Times New Roman;
 	text-align: center;
-	font-size: 50pt;
+	font-size: 50px;
 	color: darkred;
 }
 h2 {
-	font-family: Time New Roman;
+	font-family: Times New Roman;
 	font-style: italic;
 	color: darkred;
-	width: 1280px;
-	margin: 0 auto;
-	line-height: 2cm;
+	max-width: 1280px;
+	width: 90%;
+	margin: 20px auto;
+	line-height: 2em;
 }
 h3 {
-	font-family: Time New Roman;
-	width: 1280px;
-	margin: 0 auto;
-	line-height: 2cm;
+	font-family: Times New Roman;
+	max-width: 1280px;
+	width: 90%;
+	margin: 20px auto;
+	line-height: 2em;
 }
 p {
 	font-family: Times New Roman;
 	text-align: justify;
-	width: 1280px;
-	margin: 0 auto;
-	text-indent: 1cm;
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto 20px auto;
+	text-indent: 1.5em;/*красная строка*/
 }
 img {
 	border: 5px solid darkred;
-	margin-top: 1cm;
-	margin-bottom: 1cm;
+	margin: 20px auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
