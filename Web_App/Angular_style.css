@@ -2,8 +2,7 @@ body {
 	background: #FFE5CA;
 }
 .wrapper {
-	max-width: 1380px;
-	width: 100%;
+	width: 1380px;
 	margin: 0 auto;
 }
 header {
@@ -13,9 +12,8 @@ h1 {
 	text-align: center;
 	color: #FA9884;
 	font-size: 60px;
-	font-family: Helvetica;
+	font-family: Helvetica, Arial, sans-serif;
 	-webkit-text-stroke: 3px darkred;
-	text-stroke: 3px darkred;
 	letter-spacing: 2px;
 }
 .aside_right {
