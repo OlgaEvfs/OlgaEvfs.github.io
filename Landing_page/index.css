@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
-    display: flex;
+    /*display: flex;*/
     box-sizing: border-box;
     padding: 0;
     /*width_child*100/parent*/
@@ -299,7 +299,7 @@ img {
 .about_us p {
     font-size: 1.125rem/*18px*/;
     /*width: 100%;*/
-    font-family: font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .team {
     width: 48%;
@@ -355,7 +355,7 @@ img {
     padding: 12px;
 }
 .review1 {
-    width: 100%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -636,6 +636,7 @@ textarea {
     .people_review {
         width: 81.9935691%;
         margin-left: 8.5%/*40px*/;
+    }
     .button_review {
         width: 60%;
         margin-left: 20%;
@@ -706,7 +707,7 @@ textarea {
     .container {
         flex-direction: column;
         /*flex-wrap: wrap;*/
-        width: 68.7%;
+        width: /*68.7%*/100%;
         height: auto;
     }
     .menu {
@@ -757,6 +758,8 @@ textarea {
     nav a {
         font-size: 1.6rem/*24px*/;
     }
+}
+
 @media (max-width: 800px) {
     header {
         flex-direction: column;
@@ -800,16 +803,17 @@ textarea {
     }
     nav {
         flex-direction: column;
+        gap: 15px;
         margin-right: 0;
     }
     nav a {
-        font-size: 1.6rem/*24px*/;
+        font-size: 1.2rem/*24px*/;
     }
     .container {
         width: 100%;
     }
   .offers h2 {
-    font-size: 4rem;
+    font-size: 2.2rem;
     width: 100%;
     margin-left: 0;
     text-align: center;
@@ -872,7 +876,7 @@ textarea {
   .team h2,
   .review h2,
   .review1 h2 {
-    font-size: 4rem;
+    font-size: 2.2rem;
     width: 100%;
   }
 
@@ -887,7 +891,8 @@ textarea {
   }
 
   .line {
-    min-width: 70%;
+    flex: 1;
+    min-width: /*70%*/auto;
     margin-top: 5%;
   }
 
@@ -899,7 +904,8 @@ textarea {
   input,
   select,
   textarea {
-    max-width: 70%;
+    max-width: /*70%*/100%;
+    width: 100%;
   }
 
   input[type='text'],
@@ -932,6 +938,4 @@ textarea {
     font-size: 1.25rem;
     padding: 10px;
   }
-}
-
 }
