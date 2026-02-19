@@ -1,7 +1,9 @@
 body {
 	background-repeat: no-repeat;
-	background: url('Images/background.jpg') fixed;
+	background-image: url('Images/background.jpg');
+	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 .Wrapper {
 	width: 1280px;
