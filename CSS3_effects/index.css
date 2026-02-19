@@ -255,7 +255,7 @@ details {
 }
 @media (max-width: 768px) {
     body {
-        background-size: cover;        /* фон растягивается на весь экран */
+        background-size: contain;        /* фон растягивается на весь экран */
         background-attachment: scroll; /* фиксированный фон на мобильных устройствах плохо работает */
         background-position: center;   /* центрируем картинку */
     }
