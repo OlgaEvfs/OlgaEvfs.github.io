@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-image: url("Images/background.jpg");
     background-size: cover;
@@ -150,7 +153,7 @@ main {
     flex-direction: row;
     box-sizing: border-box;
     margin-bottom: 6.484375%/*83px*/;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .offers {
     width: 100%;
@@ -811,6 +814,8 @@ textarea {
     }
     .container {
         width: 100%;
+        margin: 0;
+        padding: 10px;
     }
   .offers h2 {
     font-size: 2.2rem;
@@ -827,6 +832,7 @@ textarea {
   .info {
     width: 100%;
     flex-direction: column;
+    margin: 10px 0;
   }
   .name_dish {
     width: 100%;
@@ -851,11 +857,11 @@ textarea {
   .order_button {
     font-size: 1.2rem;
     padding: 10px;
-    width: 50%;
+    width: 70%;
   }
 
   .button_footer {
-    width: 50%;
+    width: 70%;
     font-size: 1.2rem;
   }
 
@@ -881,8 +887,12 @@ textarea {
   }
 
   .map {
-    height: 100%;
+    height: auto;
   }
+
+  #map_img {
+        height: auto;
+    }
 
   .row {
     flex-direction: row;
@@ -935,7 +945,7 @@ textarea {
 
   .order_button,
   .button_footer {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     padding: 10px;
   }
 }
