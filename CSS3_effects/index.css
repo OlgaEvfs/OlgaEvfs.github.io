@@ -253,10 +253,3 @@ details {
 	box-shadow: 0px 1px 3px 0px #4E413B,
 				inset 0px -2px 3px 0px #4E413B;
 }
-@media (max-width: 768px) {
-    body {
-        background-size: contain;        /* фон растягивается на весь экран */
-        background-attachment: scroll; /* фиксированный фон на мобильных устройствах плохо работает */
-        background-position: center;   /* центрируем картинку */
-    }
-}
