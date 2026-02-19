@@ -1,9 +1,11 @@
 .Wrapper {
 	width: 1280px;
 	margin: 0 auto;
-	background-repeat: no-repeat;
-	background: url('Images/ski.jpg') fixed;
-	background-size: cover;
+	background-repeat: no-repeat;/* без повторений */
+	background-image: url('Images/ski.jpg');
+	background-attachment: fixed;/* чтобы фон был фиксированным */
+	background-size: cover;/* растягивает фон на весь экран */
+	background-position: center;/* центрирует фон */
 	border: 10px solid transparent;
 	border-image: 10 repeating-linear-gradient(135deg, #EBEAFF, #EBEAFF 10px, transparent 10px, transparent 20px, darkblue 20px, darkblue 30px,transparent 30px, transparent 40px);
 	overflow: hidden;
