@@ -29,7 +29,8 @@ body, html {
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    width: 10.5rem; /* Немного увеличим стандартную ширину */
+    width: 12rem; /* Увеличиваем и фиксируем ширину для всех */
+    min-height: 10rem; /* Добавляем минимальную высоту для симметрии */
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.4);
@@ -45,12 +46,12 @@ body, html {
 }
 
 .sound {
-    font-size: 1rem; /* Чуть меньше шрифт */
+    font-size: 1.1rem; 
     text-transform: uppercase;
-    letter-spacing: .05rem; /* Меньше расстояние между буквами */
+    letter-spacing: .1rem;
     color: #ffc600;
-    word-break: break-all; /* Если слово совсем длинное, оно перенесется */
-    line-height: 1.2;
+    width: 100%; /* Занимает всю ширину кнопки */
+    overflow-wrap: break-word; /* Если не влезет, перенесется */
 }
 
 /* Адаптивность для телефонов */
@@ -59,21 +60,22 @@ body, html {
         padding: 10px;
     }
     .key {
-        width: 8.5rem; /* Увеличим на мобилках, чтобы текст влезал */
+        width: 9rem; /* Все кнопки на мобилках одного размера */
+        min-height: 8rem;
         margin: 0.5rem;
-        padding: 0.8rem 0.4rem;
     }
     kbd {
         font-size: 2.5rem;
     }
     .sound {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
     .key {
-        width: 7.5rem;
+        width: 8rem;
+        margin: 0.3rem;
     }
 }
 .playing {
