@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Drum App Tests</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.0.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+      /* Скрываем само приложение во время тестов, если нужно, 
+         но оставим видимым для наглядности под результатами */
+      #qunit-fixture-visible {
+          margin-top: 20px;
+          border-top: 2px solid #ccc;
+      }
+  </style>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+
+  <!-- Копия разметки приложения для тестирования -->
+  <div id="qunit-fixture-visible">
+      <div class="keys">
+          <div data-key="65" class="key"><kbd>A</kbd><span class="sound">clap</span></div>
+          <div data-key="83" class="key"><kbd>S</kbd><span class="sound">hihat</span></div>
+      </div>
+      <audio data-key="65" src="sounds/clap.wav"></audio>
+      <audio data-key="83" src="sounds/hihat.wav"></audio>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://code.jquery.com/qunit/qunit-2.20.0.js"></script>
+  
+  <script>
+    // Заглушка (Mock), чтобы тесты не падали из-за политики автоплея браузера
+    // Мы просто заменяем реальный play() на пустую функцию
+    window.HTMLMediaElement.prototype.play = function() {
+        return Promise.resolve(); 
+    };
+  </script>
+
+  <!-- Загружаем твой код -->
+  <script src="drum.js"></script>
+
+  <script>
+    QUnit.module('Drum Kit Logic', function() {
+
+      QUnit.test('should add "playing" class when playSound is called', function(assert) {
+        const keyCode = 65; // Клавиша 'A'
+        const $key = $(`.key[data-key="${keyCode}"]`);
+        
+        assert.notOk($key.hasClass('playing'), 'Initially should not have "playing" class');
+        
+        playSound(keyCode);
+        
+        assert.ok($key.hasClass('playing'), 'Should have "playing" class after playSound()');
+      });
+
+      QUnit.test('should remove "playing" class when stopSound is called', function(assert) {
+        const keyCode = 83; // Клавиша 'S'
+        const $key = $(`.key[data-key="${keyCode}"]`);
+        
+        playSound(keyCode);
+        assert.ok($key.hasClass('playing'), 'Should be playing first');
+        
+        stopSound(keyCode);
+        assert.notOk($key.hasClass('playing'), 'Should remove "playing" class after stopSound()');
+      });
+
+      QUnit.test('should not crash if invalid key is pressed', function(assert) {
+        try {
+          playSound(999); // Несуществующая клавиша
+          assert.ok(true, 'Did not crash on invalid key');
+        } catch (e) {
+          assert.ok(false, 'Crashed on invalid key: ' + e.message);
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

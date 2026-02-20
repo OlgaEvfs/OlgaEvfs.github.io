@@ -1,25 +1,40 @@
-// Как всегда проверим готовность документа
-$(function() {
-    // Отлавливаем событие "Нажатие на клавишу"
-    $(this).keydown(function(event) {
-        // Создаем переменную, в которую помещаем div с подходящим data-key
-        var key = $(this).find('.key[data-key='+event.which+']');
-        // Находим на странице тег audio с нужным data-key и помещаем также в переменную для удобства
-        var audio = $(this).find('audio[data-key='+event.which+']')[0];
-        // Присваиваем активный класс к клавише, чтобы подсветить ее
-        key.toggleClass('playing');
-        // Проверяем существует ли audio тег с таким data-key
-        if (!audio) return;
-        // Васпроизводим звук
-        audio.play();
-        // Сбрасываем таймер звуковой дорожки снова на 0
+function playSound(keyCode) {
+    const key = $(`.key[data-key="${keyCode}"]`);
+    const audio = $(`audio[data-key="${keyCode}"]`)[0];
+
+    if (!key.length) return;
+
+    key.addClass('playing');
+    
+    if (audio) {
         audio.currentTime = 0;
+        audio.play();
+    }
+}
+
+function stopSound(keyCode) {
+    const key = $(`.key[data-key="${keyCode}"]`);
+    key.removeClass('playing');
+}
+
+$(function() {
+    $(window).on('keydown', function(event) {
+        playSound(event.which);
     });
-    // Отслеживаем событие, когда пользователь отпускает кнопку
-    $(this).keyup(function(event) {
-        // снова создаем переменную с нужным data-key
-        var key = $(this).find('.key[data-key='+event.which+']');
-        // Убираем класс, который подсвечивает кнопку
-        key.toggleClass('playing');
+
+    $(window).on('keyup', function(event) {
+        stopSound(event.which);
+    });
+
+    // Добавляем поддержку мыши и тачскринов
+    $('.key').on('mousedown touchstart', function(e) {
+        e.preventDefault(); // Предотвращаем лишние действия браузера (зум, выделение)
+        const keyCode = $(this).data('key');
+        playSound(keyCode);
+    });
+
+    $('.key').on('mouseup mouseleave touchend', function() {
+        const keyCode = $(this).data('key');
+        stopSound(keyCode);
     });
 });
