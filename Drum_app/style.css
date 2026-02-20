@@ -29,14 +29,13 @@ body, html {
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    width: 12rem; /* Увеличиваем и фиксируем ширину для всех */
-    min-height: 10rem; /* Добавляем минимальную высоту для симметрии */
+    width: 13rem; /* Еще немного увеличим, чтобы точно всё влезло в ряд */
+    min-height: 10rem;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 .5rem black;
     box-shadow: 0 0 2rem rgb(7, 20, 212);
-    /* Запрещаем выделение текста при тапах */
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -46,26 +45,19 @@ body, html {
 }
 
 .sound {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
-    width: 100%; /* Занимает всю ширину кнопки */
-    overflow-wrap: break-word; /* Если не влезет, перенесется */
+    white-space: nowrap; /* Запрещаем перенос строки */
 }
 
 /* Адаптивность для телефонов */
 @media (max-width: 768px) {
-    .keys {
-        padding: 10px;
-    }
     .key {
-        width: 9rem; /* Все кнопки на мобилках одного размера */
+        width: 10rem; /* Оптимально для планшетов/крупных телефонов */
         min-height: 8rem;
         margin: 0.5rem;
-    }
-    kbd {
-        font-size: 2.5rem;
     }
     .sound {
         font-size: 0.9rem;
@@ -74,7 +66,7 @@ body, html {
 
 @media (max-width: 480px) {
     .key {
-        width: 8rem;
+        width: 9rem; /* Минимально возможная ширина для BUMBLEBASS без переноса */
         margin: 0.3rem;
     }
 }
