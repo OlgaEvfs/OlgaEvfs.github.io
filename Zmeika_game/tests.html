@@ -35,9 +35,12 @@
 
         // 1. Тест границ поля
         (function testBoundaries() {
-            assert(isOutside({x: -1, y: 10}) === true, "isOutside должен вернуть true для x = -1");
-            assert(isOutside({x: 60, y: 10}) === true, "isOutside должен вернуть true для x = 60 (граница)");
-            assert(isOutside({x: 30, y: 30}) === false, "isOutside должен вернуть false для центра поля");
+            const centerX = Math.floor(FIELD_SIZE_X / 2);
+            const centerY = Math.floor(FIELD_SIZE_Y / 2);
+
+            assert(isOutside({x: -1, y: 10}) === true, "isOutside должен вернуть true для x = -1 (вне поля)");
+            assert(isOutside({x: FIELD_SIZE_X, y: 10}) === true, "isOutside должен вернуть true для x = " + FIELD_SIZE_X + " (граница)");
+            assert(isOutside({x: centerX, y: centerY}) === false, "isOutside должен вернуть false для центра поля (" + centerX + ", " + centerY + ")");
         })();
 
         // 2. Тест столкновения со змейкой
