@@ -18,6 +18,10 @@ body, html {
     justify-content: center;
     flex-wrap: wrap;
 }
+* {
+    box-sizing: border-box;
+}
+
 .key {
     border: .4rem solid black;
     border-radius: .5rem;
@@ -25,7 +29,7 @@ body, html {
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    width: 10rem;
+    width: 10.5rem; /* Немного увеличим стандартную ширину */
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.4);
@@ -34,18 +38,30 @@ body, html {
     /* Запрещаем выделение текста при тапах */
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sound {
+    font-size: 1rem; /* Чуть меньше шрифт */
+    text-transform: uppercase;
+    letter-spacing: .05rem; /* Меньше расстояние между буквами */
+    color: #ffc600;
+    word-break: break-all; /* Если слово совсем длинное, оно перенесется */
+    line-height: 1.2;
 }
 
 /* Адаптивность для телефонов */
 @media (max-width: 768px) {
     .keys {
-        padding: 20px;
-        align-content: center;
+        padding: 10px;
     }
     .key {
-        width: 7rem;
+        width: 8.5rem; /* Увеличим на мобилках, чтобы текст влезал */
         margin: 0.5rem;
-        padding: 0.5rem;
+        padding: 0.8rem 0.4rem;
     }
     kbd {
         font-size: 2.5rem;
@@ -57,11 +73,7 @@ body, html {
 
 @media (max-width: 480px) {
     .key {
-        width: 6rem;
-        font-size: 1.2rem;
-    }
-    kbd {
-        font-size: 2rem;
+        width: 7.5rem;
     }
 }
 .playing {
