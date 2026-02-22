@@ -194,3 +194,66 @@ body {
     background-color: white; 
 }
 
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+
+  .app-header h1 {
+    font-size: 18px;
+  }
+
+  .new-task {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .new-task input {
+    min-width: unset; /* Отменить минимальную ширину */
+    width: 100%; /* Занять всю доступную ширину */
+    padding: 8px 10px;
+  }
+
+  .new-task button {
+    width: 100%;
+    padding: 8px 10px;
+  }
+
+  .board {
+    flex-direction: column; /* Колонки будут располагаться вертикально */
+    padding: 12px 16px;
+  }
+
+  .column {
+    min-width: unset; /* Отменить минимальную ширину */
+    width: 100%; /* Колонки занимают всю ширину */
+    max-width: 100%; /* Убедиться, что не выходит за пределы */
+    padding: 10px;
+  }
+
+  .column h2 {
+    font-size: 16px;
+  }
+
+  .column-drop {
+    min-height: 150px; /* Уменьшить минимальную высоту для мобильных */
+  }
+
+  .card {
+    padding: 8px 10px;
+  }
+
+  .card-delete {
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+

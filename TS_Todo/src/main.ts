@@ -63,7 +63,7 @@ function moveTask(taskId: string, to: Status) {
     sync();
     // Если задача перемещена в колонку Done - подсветим ее карточку на 1 секунду
     if (to === 'done') {
-        const el = colums.done.querySelector(`[data-id="${taskId}]`) as HTMLElement | null;
+        const el = colums.done.querySelector(`[data-id="${taskId}"]`) as HTMLElement | null;
         if (el) {
             el.classList.add('flash-done');
             setTimeout(() => el.classList.remove('flash-done'), 2000);
@@ -73,10 +73,11 @@ function moveTask(taskId: string, to: Status) {
 
 // Изменение приоритета
 function changePriority(taskId: string, newPriority: 'low' | 'medium' | 'high') {
-    const idx = tasks.findIndex(t => t.id === taskId);
-    if (idx === -1) return;
-
-    tasks[idx].priority = newPriority;
+    tasks = tasks.map(t =>
+        t.id === taskId
+            ? { ...t, priority: newPriority }
+            : t
+    );
     sync();
 }
 
