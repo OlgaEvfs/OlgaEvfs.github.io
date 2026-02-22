@@ -29,8 +29,6 @@ body {
   justify-content: space-between;
   padding: 16px 20px;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
   backdrop-filter: blur(6px);
   background: linear-gradient(180deg, rgba(15,23,42,0.85), rgba(15,23,42,0.65));
 }
