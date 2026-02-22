@@ -236,3 +236,41 @@ button:hover {
     background-color: #fce4e6;
     color: #b11a1f
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 150px;
+        height: 210px;
+    }
+
+    .card-face {
+        font-size: 1.2rem;
+    }
+
+    .card-back h3 {
+        font-size: 1rem;
+    }
+
+    .drop-zones-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drop-zone {
+        width: 90%;
+        min-height: 150px;
+    }
+
+    #source-cards .card {
+        width: 130px;
+        height: 70px;
+        font-size: 1rem;
+    }
+
+    .drop-zone .card {
+        width: 120px;
+        height: 65px;
+        font-size: 0.9rem;
+    }
+}
