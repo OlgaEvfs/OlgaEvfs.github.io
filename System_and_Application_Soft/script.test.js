@@ -365,6 +365,9 @@ describe('DOM manipulation functions', () => {
             expect(dropZones[1].innerHTML).toBe('<h3>Application Software</h3>');
         });
 
-
+        test('должна вызывать createLearningCards', () => {
+            script.resetTest();
+            expect(script.createLearningCards).toHaveBeenCalledTimes(1);
+        });
     });
 });

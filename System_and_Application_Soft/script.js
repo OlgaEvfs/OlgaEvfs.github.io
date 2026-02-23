@@ -107,10 +107,10 @@ export function createLearningCards() {
     });
 }
 
-export function resetLearnedCards(clc = createLearningCards) { // Передаем createLearningCards как аргумент по умолчанию
+export function resetLearnedCards() { // Убираем аргумент clc
     learnedCards.length = 0; // Очищаем массив, сохраняя ссылку
     localStorage.removeItem('learnedCards');
-    clc(); // Вызываем переданную функцию
+    createLearningCards(); // Вызываем функцию напрямую
 }
 
 // Вся остальная логика, которая раньше была в DOMContentLoaded, теперь находится в функции init
