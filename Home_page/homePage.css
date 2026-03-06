@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/oboi.jpg');
+    background-image: url('Images/oboi.jpg');
     background-size: cover; /* Растягиваем картинку на весь экран */
     background-position: center center; /* Центрируем картинку */
     background-attachment: fixed; /* Закрепляем картинку, чтобы она не двигалась при прокрутке */
