@@ -1,0 +1,84 @@
+body {
+    background-image: url('images/oboi.jpg');
+    background-size: cover; /* Растягиваем картинку на весь экран */
+    background-position: center center; /* Центрируем картинку */
+    background-attachment: fixed; /* Закрепляем картинку, чтобы она не двигалась при прокрутке */
+    height: 100%; /* Высота блока 100% от экрана */
+    width: 100%; /* Ширина блока 100% от экрана */
+    position: absolute; /* Ставим картинку поверх других элементов */
+    top: 0;
+    left: 0;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+header {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+header img {
+    float: right;
+}
+main {
+    overflow: hidden;
+    clear: both;
+}
+header h1 {
+    font-size: 70px;
+    color: #213555;
+    line-height: 100px;
+    background: #DFF2EB8F;
+    width: 600px;
+    border-radius: 15px;
+    margin-top: 55px;
+    padding-left: 30px;
+}
+.navigation {
+    background: #DFF2EBCC;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.navigation p {
+    float: left;
+    margin-left: 80px;
+}
+.section {
+    clear: both;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1 {
+    color: #213555;
+    background: none;
+    font-size: 50px;
+}
+p {
+    font-size: 25px;
+    color: #213555;
+    font-weight: bold;
+    line-height: 30px;
+}
+hr {
+    border: none;
+    border-top: 3px solid #213555;
+}
+footer {
+    background: #DFF2EBCC;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear: both;
+}
+footer p {
+    float: left;
+    margin-left: 80px;
+}
+img {
+    margin-left: 10px;
+    margin-bottom:3px;
+}
