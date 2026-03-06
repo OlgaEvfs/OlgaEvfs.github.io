@@ -1,11 +1,16 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url('Images/oboi.jpg');
     background-size: cover; /* Растягиваем картинку на весь экран */
     background-position: center center; /* Центрируем картинку */
     background-attachment: fixed; /* Закрепляем картинку, чтобы она не двигалась при прокрутке */
-    height: 100%; /* Высота блока 100% от экрана */
-    width: 100%; /* Ширина блока 100% от экрана */
-    position: absolute; /* Ставим картинку поверх других элементов */
+    background-repeat: no-repeat;
+    position: relative; /* Вместо absolute */
     top: 0;
     left: 0;
 }
