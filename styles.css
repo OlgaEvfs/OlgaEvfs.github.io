@@ -301,64 +301,6 @@ html {
   transition-delay: 0.1s;
 }
 
-/*--- FUTURE ---*/
-.future {
-  padding: 80px 24px;
-  background: linear-gradient(
-    to bottom,
-    #f8fafb,
-    #eef3f5
-  );
-}
-
-.project-card.placeholder {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 32px 36px;
-
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(6px);
-
-  border-radius: 20px;
-  border: 1.5px dashed rgba(0, 0, 0, 0.15);
-
-  text-align: center;
-}
-
-.project-card.placeholder h4 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 14px;
-  color: #1e2a32;
-}
-
-.project-card.placeholder p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #3a4a55;
-}
-
-.project-card.placeholder .lang-secondary {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.85em;
-  color: rgba(58, 74, 85, 0.65);
-}
-
-.coming-soon {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 6px 14px;
-
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-  background: #4a7c86;
-  border-radius: 999px;
-}
-
 /*--- FOOTER / CONTACT ---*/
 .contact {
   padding: 80px 20px;
